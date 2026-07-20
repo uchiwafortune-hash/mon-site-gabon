@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AnimeWorld - Streaming Anime</title>
+
+<meta name="author" content="ENGOUANG FORTUNE">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+
+/* MENU */
+
+header{
+
+background:#000;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.logo{
+
+color:#ff0055;
+font-size:28px;
+font-weight:bold;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:10px;
+
+}
+
+
+nav a:hover{
+
+color:#ff0055;
+
+}
+
+
+/* BANNIERE */
+
+
+.hero{
+
+height:450px;
+
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,.9),
+rgba(0,0,0,.2)
+),
+url("https://via.placeholder.com/1200x500");
+
+background-size:cover;
+
+display:flex;
+align-items:center;
+
+padding:40px;
+
+}
+
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+
+.hero p{
+
+margin-top:15px;
+font-size:20px;
+
+}
+
+
+.btn{
+
+background:#ff0055;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:30px;
+margin-top:20px;
+
+}
+
+
+/* RECHERCHE */
+
+
+.search{
+
+padding:30px;
+
+}
+
+
+.search input{
+
+width:90%;
+padding:15px;
+border-radius:20px;
+border:none;
+font-size:17px;
+
+}
+
+
+/* CATALOGUE */
+
+
+section{
+
+padding:30px;
+
+}
+
+
+.cards{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+background:#1b1b1b;
+width:200px;
+padding:15px;
+border-radius:15px;
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+transform:scale(1.05);
+
+}
+
+
+.card img{
+
+width:100%;
+border-radius:10px;
+
+}
+
+
+.card h3{
+
+margin-top:10px;
+
+}
+
+
+
+.watch{
+
+background:#ff0055;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:10px;
+margin-top:10px;
+
+}
+
+
+/* EPISODES */
+
+
+.episodes button{
+
+background:#222;
+color:white;
+border:1px solid #ff0055;
+padding:12px;
+margin:5px;
+border-radius:10px;
+
+}
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#000;
+text-align:center;
+padding:25px;
+color:#aaa;
+
+}
+
+
+footer strong{
+
+color:#ff0055;
+
+}
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+header{
+
+flex-direction:column;
+
+}
+
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+
+.card{
+
+width:160px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+🍥 AnimeWorld
+</div>
+
+
+<nav>
+
+<a href="#">Accueil</a>
+
+<a href="#">Animés</a>
+
+<a href="#">Genres</a>
+
+<a href="#">Connexion</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+Regarde tes animés préférés
+</h1>
+
+
+<p>
+Streaming anime HD, action, aventure, romance et plus.
+</p>
+
+
+<button class="btn">
+Commencer
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="search">
+
+
+<input placeholder="🔎 Rechercher un animé...">
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🔥 Animés populaires
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<img src="https://via.placeholder.com/200x280">
+
+<h3>One Piece</h3>
+
+<p>Aventure • Action</p>
+
+<button class="watch">
+Regarder
+</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://via.placeholder.com/200x280">
+
+<h3>Naruto</h3>
+
+<p>Ninja • Combat</p>
+
+<button class="watch">
+Regarder
+</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://via.placeholder.com/200x280">
+
+<h3>Jujutsu Kaisen</h3>
+
+<p>Fantastique</p>
+
+<button class="watch">
+Regarder
+</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://via.placeholder.com/200x280">
+
+<h3>Dragon Ball</h3>
+
+<p>Combat</p>
+
+<button class="watch">
+Regarder
+</button>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="episodes">
+
+
+<h2>
+Derniers épisodes
+</h2>
+
+
+<button>Episode 1</button>
+
+<button>Episode 2</button>
+
+<button>Episode 3</button>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+
+© 2026 AnimeWorld
+
+<br>
+
+Créé par <strong>ENGOUANG FORTUNE</strong>
+
+<br>
+
+Tous droits réservés.
+
+
+</footer>
+
+
+
+
+</body>
+
+  </html>
