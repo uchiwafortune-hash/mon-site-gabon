@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gabon Explorer - ENGOUANG FORTUNE</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f2f2f2;
+}
+
+header{
+background:#00853f;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.logo{
+font-size:50px;
+animation:tourner 4s infinite;
+}
+
+@keyframes tourner{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+
+nav{
+background:#003d25;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+
+section{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:15px;
+}
+
+
+.carte{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+
+.box{
+background:#eee;
+padding:15px;
+border-radius:10px;
+width:250px;
+}
+
+
+button{
+background:#fcd116;
+border:0;
+padding:12px;
+border-radius:10px;
+}
+
+
+footer{
+background:#003d25;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦
+</div>
+
+<h1>Gabon Explorer</h1>
+
+<p>Créé par ENGOUANG FORTUNE</p>
+
+</header>
+
+
+
+<nav>
+
+<a href="#histoire">Histoire</a>
+<a href="#culture">Culture</a>
+<a href="#animaux">Animaux</a>
+<a href="#tourisme">Tourisme</a>
+<a href="#quiz">Quiz</a>
+
+</nav>
+
+
+
+<section>
+
+<h2>Bienvenue au Gabon 🇬🇦</h2>
+
+<p>
+Découvrez le Gabon, son histoire, ses peuples,
+sa culture, ses paysages et ses richesses naturelles.
+</p>
+
+</section>
+
+
+
+
+<section id="histoire">
+
+<h2>📜 Histoire du Gabon</h2>
+
+<p>
+Le Gabon est un pays d'Afrique centrale.
+Son histoire est marquée par ses peuples anciens,
+la colonisation française et son indépendance obtenue
+le 17 août 1960.
+</p>
+
+</section>
+
+
+
+
+<section id="culture">
+
+<h2>🌍 Culture gabonaise</h2>
+
+<p>
+Le Gabon possède plusieurs peuples comme les Fang,
+les Punu, les Myènè, les Nzebi et plusieurs autres.
+Chaque communauté possède ses traditions,
+ses danses et ses langues.
+</p>
+
+</section>
+
+
+
+
+<section id="animaux">
+
+<h2>🦍 Animaux du Gabon</h2>
+
+<div class="carte">
+
+<div class="box">
+<h3>Gorille</h3>
+<p>Présent dans les forêts gabonaises.</p>
+</div>
+
+
+<div class="box">
+<h3>Éléphant</h3>
+<p>Protégé dans les parcs nationaux.</p>
+</div>
+
+
+<div class="box">
+<h3>Perroquet gris</h3>
+<p>Un oiseau célèbre d'Afrique centrale.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="tourisme">
+
+<h2>🏝 Tourisme</h2>
+
+<p>
+Découvrez le parc national de Loango,
+les plages de Libreville,
+les montagnes et les forêts du Gabon.
+</p>
+
+</section>
+
+
+
+
+<section>
+
+<h2>🔎 Recherche</h2>
+
+<input id="recherche" placeholder="Chercher sur le Gabon">
+
+<p id="resultat"></p>
+
+
+</section>
+
+
+
+
+<section id="quiz">
+
+<h2>❓ Quiz Gabon</h2>
+
+<p>
+Quelle est la date de l'indépendance du Gabon ?
+</p>
+
+
+<button onclick="reponse()">
+Voir la réponse
+</button>
+
+
+<p id="rep"></p>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 Gabon Explorer - ENGOUANG FORTUNE 🇬🇦
+</p>
+
+</footer>
+
+
+
+
+<script>
+
+function reponse(){
+
+document.getElementById("rep").innerHTML=
+"Le Gabon est devenu indépendant le 17 août 1960.";
+
+}
+
+
+
+let recherche=document.getElementById("recherche");
+
+recherche.onkeyup=function(){
+
+let texte=recherche.value.toLowerCase();
+
+
+if(texte.includes("gabon")){
+
+document.getElementById("resultat").innerHTML=
+"Le Gabon est un pays d'Afrique centrale.";
+
+}
+
+else if(texte.includes("libreville")){
+
+document.getElementById("resultat").innerHTML=
+"Libreville est la capitale du Gabon.";
+
+}
+
+else{
+
+document.getElementById("resultat").innerHTML="";
+
+}
+
+}
+
+
+</script>
+
+
+
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gabon Explorer | ENGOUANG FORTUNE</title>
+
+
+<style>
+
+*{
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+background:#eef3ef;
+color:#222;
+
+}
+
+
+
+header{
+
+background:linear-gradient(135deg,#00853f,#003d25);
+color:white;
+text-align:center;
+padding:30px;
+
+}
+
+
+
+.logo{
+
+font-size:80px;
+display:inline-block;
+animation:rotation 5s infinite linear;
+
+}
+
+
+
+@keyframes rotation{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+
+
+header h1{
+
+font-size:40px;
+margin:10px;
+
+}
+
+
+
+header p{
+
+font-size:20px;
+
+}
+
+
+
+
+nav{
+
+background:#003d25;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+
+}
+
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+color:#fcd116;
+
+}
+
+
+
+
+.hero{
+
+background:
+linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+),
+url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gabon_landscape.jpg/1280px-Gabon_landscape.jpg");
+
+
+background-size:cover;
+background-position:center;
+
+height:500px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+text-align:center;
+
+}
+
+
+
+.hero h2{
+
+font-size:45px;
+
+}
+
+
+
+.hero button{
+
+padding:15px 30px;
+background:#fcd116;
+border:none;
+border-radius:20px;
+font-size:18px;
+
+}
+
+
+
+
+section{
+
+padding:40px;
+margin:20px;
+
+background:white;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px #ccc;
+
+}
+
+
+
+.cards{
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+
+}
+
+
+
+.card{
+
+width:260px;
+
+background:#f5f5f5;
+
+padding:20px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:0.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.card h3{
+
+color:#00853f;
+
+}
+
+
+
+footer{
+
+background:#003d25;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦
+</div>
+
+
+<h1>Gabon Explorer</h1>
+
+<p>
+Un voyage au cœur du Gabon par ENGOUANG FORTUNE
+</p>
+
+
+</header>
+
+
+
+<nav>
+
+<a href="#accueil">Accueil</a>
+<a href="#culture">Culture</a>
+<a href="#histoire">Histoire</a>
+<a href="#nature">Nature</a>
+<a href="#tourisme">Tourisme</a>
+<a href="#quiz">Quiz</a>
+
+
+</nav>
+
+
+
+<div class="hero" id="accueil">
+
+
+<div>
+
+<h2>
+Découvrez le Gabon 🇬🇦
+</h2>
+
+
+<p>
+Histoire, peuples, cultures, animaux et paysages.
+</p>
+
+
+<button>
+Explorer
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<section>
+
+
+<h2>
+Bienvenue sur Gabon Explorer
+</h2>
+
+
+<p>
+
+Ce site présente la richesse du Gabon :
+son histoire, ses provinces, ses ethnies,
+sa culture, ses plats traditionnels,
+ses animaux et ses lieux touristiques.
+
+</p>
+
+
+<p>
+
+Créé par <b>ENGOUANG FORTUNE</b>,
+ce projet a pour objectif de faire découvrir
+le Gabon au monde entier.
+
+</p>
+
+
+</section>
+
+
+
+<section>
+
+
+<h2>
+Les grandes catégories du site
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>📜 Histoire</h3>
+
+<p>
+Découvrez les origines du Gabon,
+l'indépendance et les grandes périodes du pays.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🌍 Culture</h3>
+
+<p>
+Ethnies, langues, danses,
+traditions et coutumes gabonaises.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🦍 Animaux</h3>
+
+<p>
+Gorilles, éléphants,
+mandrills et autres espèces.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🏝 Tourisme</h3>
+
+<p>
+Parcs nationaux, plages,
+montagnes et sites naturels.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section><section id="provinces">
+
+<h2>🗺️ Les 9 provinces du Gabon</h2>
+
+<p>
+Le Gabon est divisé en 9 provinces. Chaque province possède
+sa propre histoire, sa culture et ses richesses naturelles.
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h3>Estuaire</h3>
+
+<p>
+Capitale : Libreville<br><br>
+
+C'est la province où se trouve la capitale du pays.
+Elle possède la façade maritime, des plages,
+et une grande partie de l'activité économique.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Haut-Ogooué</h3>
+
+<p>
+Capitale : Franceville<br><br>
+
+Connue pour ses richesses minières,
+ses paysages rocheux et son importance historique.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Moyen-Ogooué</h3>
+
+<p>
+Capitale : Lambaréné<br><br>
+
+Cette province est célèbre pour le fleuve Ogooué
+et l'île de Lambaréné.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>Ngounié</h3>
+
+<p>
+Capitale : Mouila<br><br>
+
+Connue pour ses traditions culturelles,
+ses forêts et ses paysages naturels.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>Nyanga</h3>
+
+<p>
+Capitale : Tchibanga<br><br>
+
+Située au sud du Gabon,
+elle possède des paysages de sav<section id="culture">
+
+<h2>🌍 Culture gabonaise</h2>
+
+<p>
+La culture gabonaise est riche et variée.
+Elle est composée de plusieurs peuples qui possèdent
+leurs propres langues, traditions, histoires et pratiques.
+</p>
+
+
+
+<h3>👥 Les principales ethnies du Gabon</h3>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Fang</h3>
+
+<p>
+Les Fang sont l'un des peuples les plus nombreux du Gabon.
+Ils sont présents surtout dans le nord du pays.
+Leur culture est connue pour les traditions familiales,
+les contes, les danses et l'art du bois.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Punu</h3>
+
+<p>
+Les Punu vivent principalement dans le sud du Gabon.
+Ils sont connus pour leurs masques traditionnels,
+leurs danses et leur patrimoine artistique.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Myènè</h3>
+
+<p>
+Les Myènè sont un peuple côtier.
+Ils ont une forte tradition liée à la mer,
+à la pêche et aux échanges commerciaux.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Nzebi</h3>
+
+<p>
+Les Nzebi sont présents notamment dans le sud-est.
+Ils possèdent des traditions liées à la musique,
+aux danses et à l'organisation communautaire.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Obamba</h3>
+
+<p>
+Les Obamba font partie des peuples du sud-est.
+Leur culture est riche en traditions orales
+et en pratiques ancestrales.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<h3>🗣️ Les langues du Gabon</h3>
+
+
+<p>
+
+La langue officielle du Gabon est le français.
+Cependant, plusieurs langues traditionnelles sont parlées :
+
+</p>
+
+
+<ul>
+
+<li>Fang</li>
+
+<li>Myènè</li>
+
+<li>Punu</li>
+
+<li>Nzebi</li>
+
+<li>Téké</li>
+
+<li>Obamba</li>
+
+<li>Vili</li>
+
+</ul>
+
+
+
+
+<h3>🎭 Traditions et danses</h3>
+
+
+<p>
+
+Les danses gabonaises accompagnent souvent
+les cérémonies, les fêtes et les événements importants.
+
+</p>
+
+
+<ul>
+
+<li>La danse Bwiti : pratique spirituelle et culturelle.</li>
+
+<li>Les danses traditionnelles Fang.</li>
+
+<li>Les danses Punu avec leurs masques célèbres.</li>
+
+<li>Les chants et rythmes traditionnels accompagnés
+par des instruments comme le tam-tam.</li>
+
+</ul>
+
+
+
+
+
+<h3>👕 Vêtements traditionnels</h3>
+
+
+<p>
+
+Les vêtements traditionnels gabonais utilisent souvent
+des tissus colorés avec des motifs représentant
+l'identité culturelle des communautés.
+
+Lors des cérémonies, les peuples portent des habits
+spécifiques accompagnés de bijoux, de peintures
+corporelles ou de masques.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+<h2>🍲 Les plats traditionnels gabonais</h2>
+
+
+<p>
+La cuisine gabonaise utilise beaucoup le manioc,
+la banane plantain, le poisson, la viande,
+les feuilles et les épices locales.
+</p>
+
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Nyembwé</h3>
+
+<p>
+
+Ingrédients :
+<br>
+- Poulet ou poisson
+<br>
+- Noix de palme
+<br>
+- Épices
+<br>
+- Oignons
+<br>
+- Ail
+
+<br><br>
+
+C'est un plat très connu préparé
+avec une sauce à base de noix de palme.
+
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>Moambe</h3>
+
+<p>
+
+Ingrédients :
+<br>
+- Sauce de noix de palme
+<br>
+- Viande ou poisson
+<br>
+- Légumes
+<br>
+- Épices
+
+<br><br>
+
+Un plat apprécié dans plusieurs régions
+d'Afrique centrale.
+
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h3>Poisson braisé</h3>
+
+<p>
+
+Ingrédients :
+<br>
+- Poisson frais
+<br>
+- Citron
+<br>
+- Piment
+<br>
+- Épices
+<br>
+- Manioc ou banane plantain
+
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>Feuilles de manioc</h3>
+
+<p>
+
+Ingrédients :
+<br>
+- Feuilles de manioc
+<br>
+- Arachides
+<br>
+- Viande ou poisson
+<br>
+- Épices
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section><section id="politique">
+
+<h2>🏛️ Politique et institutions du Gabon</h2>
+
+<p>
+Le Gabon est une République située en Afrique centrale.
+Son organisation politique repose sur des institutions
+chargées de diriger et d'administrer le pays.
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🇬🇦 Le Président de la République</h3>
+
+<p>
+Le Président de la République est le chef de l'État.
+Il représente le pays et définit les grandes orientations
+de la politique nationale.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🏛️ Le Gouvernement</h3>
+
+<p>
+Le gouvernement est dirigé par un Premier ministre
+et comprend des ministres chargés de différents domaines :
+éducation, santé, économie, défense, culture, etc.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🏢 Les provinces</h3>
+
+<p>
+Chaque province est dirigée par un gouverneur.
+Les gouverneurs représentent l'État dans les régions
+et participent à l'administration locale.
+</p>
+
+</div>
+
+
+
+<div class="card"><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gabon Explorer - ENGOUANG FORTUNE</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Arial',sans-serif;
+}
+
+
+body{
+
+background:#f1f5f2;
+color:#222;
+
+}
+
+
+/* Animation d'ouverture */
+
+.intro{
+
+position:fixed;
+width:100%;
+height:100vh;
+background:#00853f;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+animation:disparaitre 3s forwards;
+
+}
+
+
+.intro h1{
+
+color:white;
+font-size:45px;
+animation:zoom 2s;
+
+}
+
+
+@keyframes zoom{
+
+from{
+transform:scale(0);
+}
+
+to{
+transform:scale(1);
+}
+
+}
+
+
+@keyframes disparaitre{
+
+0%,80%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+visibility:hidden;
+}
+
+}
+
+
+
+
+
+header{
+
+background:
+linear-gradient(
+135deg,
+#00853f,
+#003d25
+);
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+
+
+.logo{
+
+font-size:80px;
+
+animation:rotation 5s infinite linear;
+
+}
+
+
+
+@keyframes rotation{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+
+
+header h1{
+
+font-size:45px;
+
+}
+
+
+
+header span{
+
+color:#fcd116;
+
+}
+
+
+
+
+
+nav{
+
+background:#003d25;
+
+padding:15px;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+position:sticky;
+
+top:0;
+
+z-index:10;
+
+}
+
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+color:#fcd116;
+
+}
+
+
+
+
+
+.hero{
+
+
+height:600px;
+
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.5)
+),
+
+url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Libreville_Gabon.jpg/1280px-Libreville_Gabon.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+text-align:center;
+
+color:white;
+
+
+}
+
+
+
+.hero h2{
+
+font-size:50px;
+
+}
+
+
+
+.hero p{
+
+font-size:22px;
+
+margin:20px;
+
+}
+
+
+
+.btn{
+
+
+background:#fcd116;
+
+color:black;
+
+padding:15px 30px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+
+section{
+
+background:white;
+
+margin:30px;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px #ccc;
+
+
+}
+
+
+
+h2{
+
+color:#00853f;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="intro">
+
+<h1>
+🇬🇦 Gabon Explorer
+</h1>
+
+</div>
+
+
+
+<header>
+
+
+<div class="logo">
+
+🇬🇦
+
+</div>
+
+
+<h1>
+Gabon <span>Explorer</span>
+</h1>
+
+
+<p>
+Créé par ENGOUANG FORTUNE
+</p>
+
+
+</header>
+
+
+
+
+<nav>
+
+
+<a href="#accueil">Accueil</a>
+
+<a href="#culture">Culture</a>
+
+<a href="#histoire">Histoire</a>
+
+<a href="#politique">Politique</a>
+
+<a href="#nature">Animaux</a>
+
+<a href="#tourisme">Tourisme</a>
+
+<a href="#quiz">Quiz</a>
+
+
+</nav>
+
+
+
+
+<section class="hero" id="accueil">
+
+
+<div>
+
+
+<h2>
+Bienvenue au Gabon 🇬🇦
+</h2>
+
+
+<p>
+Découvrez l'histoire, les peuples,
+la culture et les richesses du pays.
+</p>
+
+
+<a class="btn" href="#culture">
+Commencer la découverte
+</a>
+
+
+</div>
+
+
+</section><section id="histoire">
+
+<h2>📜 Histoire du Gabon</h2>
+
+<p>
+Le Gabon est un pays d'Afrique centrale situé sur la côte
+atlantique. Son histoire est liée aux nombreux peuples
+qui occupent son territoire depuis des siècles.
+</p>
+
+<p>
+Avant la colonisation, plusieurs communautés vivaient
+dans la région avec leurs propres organisations,
+traditions et échanges.
+</p>
+
+<p>
+Le Gabon devient une colonie française au XIXe siècle
+puis obtient son indépendance le 17 août 1960.
+Depuis, le pays construit son identité nationale
+autour de sa culture et de ses ressources naturelles.
+</p>
+
+</section>
+
+
+
+
+<section id="culture">
+
+<h2>🌍 Culture et peuples du Gabon</h2>
+
+<p>
+Le Gabon possède une grande diversité culturelle.
+Plusieurs ethnies participent à la richesse du pays.
+</p>
+
+
+
+<div class="cartes">
+
+
+<div class="card">
+
+<h3>Fang</h3>
+
+<p>
+Peuple présent surtout au nord du Gabon.
+Les Fang sont connus pour leurs traditions,
+leurs contes et leur art.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Punu</h3>
+
+<p>
+Peuple du sud du Gabon célèbre pour
+ses masques traditionnels et ses danses.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Myènè</h3>
+
+<p>
+Peuple côtier avec une histoire liée
+à la mer, la pêche et les échanges.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Nzebi</h3>
+
+<p>
+Peuple connu pour ses traditions,
+sa musique et son patrimoine culturel.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+<h3>🎭 Traditions</h3>
+
+<p>
+Les cérémonies traditionnelles gabonaises
+utilisent souvent la musique, les danses,
+les masques et les chants.
+</p>
+
+
+</section>
+
+
+
+
+
+<section>
+
+<h2>🍲 Cuisine gabonaise</h2>
+
+
+<div class="cartes">
+
+
+<div class="card">
+
+<h3>Nyembwé</h3>
+
+<p>
+Poulet ou poisson accompagné d'une sauce
+faite avec la noix de palme.
+</p>
+
+<p>
+Ingrédients :<section id="nature">
+
+<h2>🦍 Les animaux du Gabon</h2>
+
+<p>
+Le Gabon possède une biodiversité exceptionnelle grâce
+à ses forêts tropicales et ses parcs nationaux.
+</p>
+
+
+<div class="cartes">
+
+
+<div class="card">
+<h3>🦍 Gorille</h3>
+
+<p>
+Présent dans les forêts gabonaises.
+Il est une espèce protégée.
+</p>
+
+</div>
+
+
+
+<div class="card">
+<h3>🐘 Éléphant de forêt</h3>
+
+<p>
+Un animal emblématique du Gabon vivant
+dans les grandes forêts tropicales.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+<h3>🐒 Mandrill</h3>
+
+<p>
+Le Gabon abrite l'une des plus grandes
+populations de mandrills au monde.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+<h3>🐢 Tortues marines</h3>
+
+<p>
+Elles viennent pondre sur certaines plages
+protégées du Gabon.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="politique">
+
+
+<h2>🏛️ Politique du Gabon</h2>
+
+
+<p>
+Le Gabon est une République avec plusieurs institutions
+chargées de gérer le pays.
+</p>
+
+
+
+<div class="cartes">
+
+
+<div class="card">
+
+<h3>🇬🇦 Président de la République</h3>
+
+<p>
+Le Président est le chef de l'État.
+Il représente le pays et dirige
+les grandes orientations nationales.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🏛️ Gouvernement</h3>
+
+<p>
+Le gouvernement est composé du Premier ministre
+et des ministres responsables des différents secteurs.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>🏢 Gouverneurs</h3>
+
+<p>
+Chaque province possède un gouverneur
+qui représente l'État au niveau local.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>⚖️ Institutions</h3>
+
+<p>
+Le pays possède des institutions politiques,
+administratives et judiciaires.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="quiz">
+
+
+<h2>❓ Quiz sur le Gabon</h2>
+
+
+<p>
+1) Quelle est la date de l'indépendance du Gabon ?
+</p>
+
+<button onclick="rep1()">
+Réponse
+</button>
+
+<p id="question1"></p>
+
+
+
+
+<p>
+2) Combien de provinces possède le Gabon ?
+</p>
+
+<button onclick="rep2()">
+Réponse
+</button>
+
+<p id="question2"></p>
+
+
+
+
+<p>
+3) Quelle est la capitale du Gabon ?
+</p>
+
+<button onclick="rep3()">
+Réponse
+</button>
+
+<p id=".card img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+
+}
+p<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Western_lowland_gorilla.jpg">
+
+<h3>🦍 Gorille</h3>
+
+<p>
+Présent dans les forêts du Gabon.
+C'est une espèce protégée.
+</p>
+
+</div><div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Loango_National_Park_Gabon.jpg">
+
+<h3>🏝️ Parc national de Loango</h3>
+
+<p>
+Un des plus beaux sites naturels du Gabon,
+avec plages, forêts et animaux sauvages.
+</p>
+
+</div><div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/African_mask.jpg">
+
+<h3>🎭 Culture gabonaise</h3>
+
+<p>
+Les masques, danses et traditions représentent
+la richesse culturelle des peuples du Gabon.
+</p>
+
+</div><div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Libreville_Gabon.jpg">
+
+<h3>📜 Histoire du Gabon</h3>
+
+<p>
+Découvrez l'évolution du pays,
+des peuples anciens jusqu'à l'indépendance.
+</p>
+
+</div>/* PAGE D'ACCUEIL PROFESSIONNELLE */
+
+.hero-pro{
+
+height:700px;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.55)
+),
+url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Libreville_Gabon.jpg/1280px-Libreville_Gabon.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero-content{
+
+animation:apparition 2s ease;
+
+}
+
+
+
+.hero-content h1{
+
+font-size:60px;
+
+text-transform:uppercase;
+
+}
+
+
+
+.hero-content span{
+
+color:#fcd116;
+
+}
+
+
+
+.hero-content p{
+
+font-size:25px;
+
+max-width:700px;
+
+margin:20px auto;
+
+}
+
+
+
+.logo-animation{
+
+font-size:100px;
+
+animation:flottement 3s infinite;
+
+}
+
+
+
+@keyframes flottement{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+}
+
+
+
+
+@keyframes apparition{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+.btn-officiel{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:#fcd116;
+
+color:#000;
+
+border-radius:40px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+
+
+.btn-officiel:hover{
+
+transform:scale(1.1);
+
+background:white;
+<section class="hero-pro" id="accueil">
+
+
+<div class="hero-content">
+
+
+<div class="logo-animation">
+
+🇬🇦
+
+</div>
+
+
+<h1>
+Bienvenue sur <span>Gabon Explorer</span>
+</h1>
+
+
+
+<p>
+
+Découvrez le Gabon :
+son histoire, ses peuples, ses cultures,
+ses animaux, ses provinces et ses merveilles naturelles.
+
+</p>
+
+
+
+<p>
+
+Un projet créé par 
+<strong>ENGOUANG FORTUNE</strong>
+
+</p>
+
+
+
+<a href="#culture" class="btn-officiel">
+
+Explorer le Gabon
+
+</a>
+
+
+</div>
+
+
+</section>
+}
