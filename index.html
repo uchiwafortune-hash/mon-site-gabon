@@ -2159,26 +2159,53 @@ Découvrir l'histoire, la culture, la nature et les richesses du Gabon.
 
 </footer>
 </style>
-<style>
+<style> 
+  /* ===== FIX LARGEUR COMPLETE DU SITE ===== */
 
-/* ==/* Correction largeur du site */
-
-body{
-    width:100%;
-    overflow-x:hidden;
+html, body {
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 
-main, section{
-    width:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:30px 20px;
+body {
+    display: block;
 }
 
+header,
+nav,
+main,
+section,
+footer,
 .article,
 .carte,
+.cartes,
 .province,
+.galerie,
+.videos,
 .video-card,
-.photo{
-    width:100%;
+.photo,
+.info-box {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+}
+
+
+/* Empêche les blocs de devenir petits */
+
+main > *,
+section > *,
+.article > * {
+    max-width: 100% !important;
+}
+
+
+/* Images toujours adaptées */
+
+img,
+iframe {
+    max-width: 100% !important;
   }
