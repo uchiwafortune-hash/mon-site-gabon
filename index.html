@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fortune Anime</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0f;
+    color:white;
+}
+
+/* Barre du haut */
+header{
+    width:100%;
+    padding:15px 5%;
+    background:#15151d;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#ff4757;
+}
+
+.search{
+    flex:1;
+    max-width:500px;
+}
+
+.search input{
+    width:100%;
+    padding:12px;
+    border-radius:20px;
+    border:none;
+    outline:none;
+}
+
+/* Menu */
+.menu button{
+    background:#ff4757;
+    border:none;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+
+/* Bannière */
+.banner{
+    height:350px;
+    padding:40px 5%;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(to right,#000,transparent),
+    url("https://images.unsplash.com/photo-1578632767115-351597cf2477")
+    center/cover;
+}
+
+.banner h1{
+    font-size:40px;
+    max-width:600px;
+}
+
+
+/* Sections */
+section{
+    padding:30px 5%;
+}
+
+section h2{
+    margin-bottom:20px;
+}
+
+
+/* Catalogue */
+.catalogue{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(150px,1fr));
+
+    gap:20px;
+}
+
+
+.anime-card{
+
+    background:#171720;
+    border-radius:12px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+
+.anime-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.anime-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+
+.anime-info{
+
+    padding:12px;
+
+}
+
+
+.anime-info h3{
+
+    font-size:17px;
+    margin-bottom:8px;
+
+}
+
+
+.tag{
+
+    color:#aaa;
+    font-size:13px;
+
+}
+
+
+/* Footer */
+footer{
+
+    padding:20px;
+    text-align:right;
+    color:#888;
+
+}
+
+
+/* Téléphone */
+@media(max-width:700px){
+
+header{
+
+    flex-wrap:wrap;
+
+}
+
+.logo{
+
+    width:100%;
+    text-align:center;
+
+}
+
+.banner h1{
+
+    font-size:28px;
+
+}
+
+.banner{
+
+    height:250px;
+
+}
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+Fortune Anime
+</div>
+
+
+<div class="search">
+
+<input 
+type="search"
+placeholder="Rechercher un animé..."
+>
+
+</div>
+
+
+<div class="menu">
+
+<button>
+Profil
+</button>
+
+</div>
+
+
+</header>
+
+
+
+<div class="banner">
+
+<h1>
+Regarde tes animés préférés dans une plateforme simple et moderne
+</h1>
+
+</div>
+
+
+
+
+<section>
+
+<h2>
+🔥 Animés populaires
+</h2>
+
+
+<div class="catalogue">
+
+
+
+<div class="anime-card">
+
+<img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg">
+
+<div class="anime-info">
+
+<h3>Demon Slayer</h3>
+
+<p class="tag">
+Action • 24 épisodes
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="anime-card">
+
+<img src="https://cdn.myanimelist.net/images/anime/5/73199.jpg">
+
+<div class="anime-info">
+
+<h3>One Punch Man</h3>
+
+<p class="tag">
+Action • 12 épisodes
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="anime-card">
+
+<img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg">
+
+<div class="anime-info">
+
+<h3>Naruto</h3>
+
+<p class="tag">
+Aventure • 220 épisodes
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="anime-card">
+
+<img src="https://cdn.myanimelist.net/images/anime/1223/121999.jpg">
+
+<div class="anime-info">
+
+<h3>Jujutsu Kaisen</h3>
+
+<p class="tag">
+Fantastique • Saisons multiples
+</p>
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section>
+
+<h2>
+⭐ Nouveautés
+</h2>
+
+
+<div class="catalogue">
+
+<div class="anime-card">
+
+<img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg">
+
+<div class="anime-info">
+
+<h3>Attack on Titan</h3>
+
+<p class="tag">
+Action • Drame
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+Créé par : Fortune Uchiwa
+
+</footer>
+
+
+
+</body>
+  </html><!-- Fenêtre détails animé -->
+
+<div id="details" class="details-box">
+
+<button onclick="fermerDetails()" class="close">
+✖
+</button>
+
+<img id="detail-image">
+
+<div class="detail-text">
+
+<h2 id="detail-title"></h2>
+
+<p id="detail-description"></p>
+
+<p>
+<b>Genre :</b> 
+<span id="detail-genre"></span>
+</p>
+
+<p>
+<b>Saisons :</b>
+<span id="detail-season"></span>
+</p>
+
+<p>
+<b>Épisodes :</b>
+<span id="detail-episodes"></span>
+</p>
+
+
+<button onclick="regarder()" class="watch">
+▶ Regarder
+</button>
+
+
+<button onclick="ajouterFavori()" class="fav">
+☆ Ajouter aux favoris
+</button>
+
+
+</div>
+
+</div>
+
+
+
+<style>
+
+.details-box{
+
+display:none;
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.95);
+
+z-index:100;
+
+padding:30px;
+
+overflow:auto;
+
+}
+
+
+.details-box img{
+
+width:250px;
+
+max-width:100%;
+
+border-radius:15px;
+
+}
+
+
+.detail-text{
+
+max-width:700px;
+
+margin-top:20px;
+
+}
+
+
+.detail-text p{
+
+margin:15px 0;
+
+line-height:1.6;
+
+}
+
+
+.close{
+
+position:absolute;
+
+right:20px;
+top:20px;
+
+background:#ff4757;
+
+border:0;
+
+color:white;
+
+padding:10px;
+
+border-radius:50%;
+
+}
+
+
+
+.watch,
+.fav{
+
+padding:12px 20px;
+
+margin:10px;
+
+border:none;
+
+border-radius:20px;
+
+cursor:pointer;
+
+}
+
+
+.watch{
+
+background:#2ed573;
+
+color:white;
+
+}
+
+
+.fav{
+
+background:#ffa502;
+
+color:white;
+
+}
+
+
+
+</style>
+
+
+
+
+
+<script>
+
+
+let animeSelectionne = {};
+
+
+
+function ouvrirDetails(anime){
+
+
+animeSelectionne = anime;
+
+
+document.getElementById("details").style.display="block";
+
+
+document.getElementById("detail-image").src=anime.image;
+
+
+document.getElementById("detail-title").innerHTML=anime.nom;
+
+
+document.getElementById("detail-description").innerHTML=
+anime.description;
+
+
+document.getElementById("detail-genre").innerHTML=
+anime.genre;
+
+
+document.getElementById("detail-season").innerHTML=
+anime.saisons;
+
+
+document.getElementById("detail-episodes").innerHTML=
+anime.episodes;
+
+
+
+}
+
+
+
+function fermerDetails(){
+
+document.getElementById("details").style.display="none";
+
+}
+
+
+
+function ajouterFavori(){
+
+
+let favoris =
+JSON.parse(localStorage.getItem("favoris")) || [];
+
+
+favoris.push(animeSelectionne);
+
+
+localStorage.setItem(
+"favoris",
+JSON.stringify(favoris)
+);
+
+
+alert("Ajouté aux favoris !");
+
+}
+
+
+
+
+function regarder(){
+
+
+alert(
+"Le lecteur sera connecté aux vidéos légales disponibles pour cet animé."
+);
+
+
+}
+
+
+
+</script><script>
+
+const listeAnimes = [
+
+{
+nom:"Demon Slayer",
+image:"https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+genre:"Action • Fantastique",
+saisons:"4 saisons",
+episodes:"Plus de 50 épisodes",
+description:"Tanjiro part dans une quête pour sauver sa sœur et combattre les démons."
+},
+
+
+{
+nom:"Naruto",
+image:"https://cdn.myanimelist.net/images/anime/5/17407.jpg",
+genre:"Aventure • Ninja",
+saisons:"2 parties",
+episodes:"720 épisodes",
+description:"L'histoire d'un jeune ninja qui veut devenir le Hokage de son village."
+},
+
+
+{
+nom:"Jujutsu Kaisen",
+image:"https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+genre:"Action • Surnaturel",
+saisons:"2 saisons",
+episodes:"Plus de 40 épisodes",
+description:"Yuji Itadori rejoint une école de sorcellerie pour combattre des fléaux."
+},
+
+
+{
+nom:"One Punch Man",
+image:"https://cdn.myanimelist.net/images/anime/12/76049.jpg",
+genre:"Action • Comédie",
+saisons:"2 saisons",
+episodes:"24 épisodes",
+description:"Saitama est un héros capable de battre ses ennemis en un seul coup."
+},
+
+
+{
+nom:"Attack on Titan",
+image:"https://cdn.myanimelist.net/images/anime/10/47347.jpg",
+genre:"Action • Drame",
+saisons:"4 saisons",
+episodes:"Plus de 80 épisodes",
+description:"L'humanité lutte pour survivre face aux titans."
+}
+
+];
+
+
+
+const catalogue = document.querySelector(".catalogue");
+
+
+
+catalogue.innerHTML="";
+
+
+
+listeAnimes.forEach(anime=>{
+
+
+let carte=document.createElement("div");
+
+carte.className="anime-card";
+
+
+carte.innerHTML=`
+
+<img src="${anime.image}">
+
+<div class="anime-info">
+
+<h3>${anime.nom}</h3>
+
+<p class="tag">
+${anime.genre}
+</p>
+
+</div>
+
+`;
+
+
+
+carte.onclick=function(){
+
+ouvrirDetails(anime);
+
+};
+
+
+catalogue.appendChild(carte);
+
+
+});
+
+
+
+  </script><!-- Zone profil utilisateur -->
+
+<div id="profilBox" class="profil-box">
+
+<button onclick="fermerProfil()" class="close">
+✖
+</button>
+
+<h2>Profil utilisateur</h2>
+
+
+<div id="profilConnexion">
+
+<input id="pseudo"
+placeholder="Ton pseudo">
+
+
+<button onclick="creerProfil()">
+Créer mon profil
+</button>
+
+</div>
+
+
+<div id="profilActif" style="display:none">
+
+
+<h3>
+Bienvenue <span id="nomProfil"></span>
+</h3>
+
+
+<p>
+⭐ Mes favoris :
+<span id="nombreFavoris">0</span>
+</p>
+
+
+<button onclick="deconnexion()">
+Déconnexion
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<style>
+
+
+.profil-box{
+
+display:none;
+
+position:fixed;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+background:#171720;
+
+padding:30px;
+
+border-radius:15px;
+
+z-index:200;
+
+width:90%;
+
+max-width:400px;
+
+}
+
+
+.profil-box input{
+
+width:100%;
+
+padding:12px;
+
+margin:10px 0;
+
+border-radius:10px;
+
+border:none;
+
+}
+
+
+.profil-box button{
+
+padding:10px 15px;
+
+background:#ff4757;
+
+border:none;
+
+color:white;
+
+border-radius:20px;
+
+cursor:pointer;
+
+}
+
+
+</style>
+
+
+
+
+
+<script>
+
+
+// Recherche
+
+
+const recherche = document.querySelector(".search input");
+
+
+recherche.addEventListener("input",()=>{
+
+
+let texte =
+recherche.value.toLowerCase();
+
+
+
+document.querySelectorAll(".anime-card")
+.forEach(card=>{
+
+
+let nom =
+card.innerText.toLowerCase();
+
+
+
+if(nom.includes(texte)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+
+});
+
+
+});
+
+
+
+
+
+// Profil utilisateur
+
+
+const boutonProfil =
+document.querySelector(".menu button");
+
+
+boutonProfil.onclick=function(){
+
+document.getElementById("profilBox")
+.style.display="block";
+
+chargerProfil();
+
+}
+
+
+
+
+function fermerProfil(){
+
+document.getElementById("profilBox")
+.style.display="none";
+
+}
+
+
+
+
+function creerProfil(){
+
+
+let nom =
+document.getElementById("pseudo").value;
+
+
+
+if(nom==""){
+
+alert("Choisis un pseudo");
+
+return;
+
+}
+
+
+
+localStorage.setItem(
+"utilisateur",
+nom
+);
+
+
+chargerProfil();
+
+
+}
+
+
+
+
+function chargerProfil(){
+
+
+let utilisateur =
+localStorage.getItem("utilisateur");
+
+
+
+if(utilisateur){
+
+
+document.getElementById("profilConnexion")
+.style.display="none";
+
+
+document.getElementById("profilActif")
+.style.display="block";
+
+
+document.getElementById("nomProfil")
+.innerHTML=utilisateur;
+
+
+
+let favoris =
+JSON.parse(localStorage.getItem("favoris")) || [];
+
+
+
+document.getElementById("nombreFavoris")
+.innerHTML=favoris.length;
+
+
+}
+
+
+}
+
+
+
+
+
+function deconnexion(){
+
+
+localStorage.removeItem("utilisateur");
+
+
+location.reload();
+
+
+}
+
+
+
+</script><section id="lecteur" style="padding:40px;background:#111;color:white;">
+
+<h2>🎬 Lecteur vidéo</h2>
+
+<div style="max-width:1000px;margin:auto;">
+
+<video
+id="player"
+controls
+controlsList="nodownload"
+preload="metadata"
+poster="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5"
+style="
+width:100%;
+border-radius:15px;
+background:black;
+">
+
+<source src="video.mp4" type="video/mp4">
+
+Votre navigateur ne supporte pas la vidéo.
+
+</video>
+
+<div style="display:flex;justify-content:space-between;gap:10px;margin-top:20px;flex-wrap:wrap;">
+
+<button onclick="precedent()">
+⏮ Épisode précédent
+</button>
+
+<button onclick="playPause()">
+▶ Lecture / Pause
+</button>
+
+<button onclick="suivant()">
+⏭ Épisode suivant
+</button>
+
+<button onclick="pleinEcran()">
+⛶ Plein écran
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const player=document.getElementById("player");
+
+function playPause(){
+
+if(player.paused){
+
+player.play();
+
+}else{
+
+player.pause();
+
+}
+
+}
+
+function pleinEcran(){
+
+if(player.requestFullscreen){
+
+player.requestFullscreen();
+
+}
+
+}
+
+function precedent(){
+
+alert("Épisode précédent");
+
+}
+
+function suivant(){
+
+alert("Épisode suivant");
+
+}
+
+</script>
