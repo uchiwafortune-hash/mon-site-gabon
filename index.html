@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENGOUANG FORTUNE - Découvrez le Gabon</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:linear-gradient(90deg,#009e49,#fcd116,#3a75c4);
+padding:20px;
+text-align:center;
+color:white;
+}
+
+nav{
+background:#111;
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+text-shadow:2px 2px 10px black;
+}
+
+.hero p{
+font-size:22px;
+margin-top:10px;
+}
+
+.btn{
+margin-top:25px;
+background:#009e49;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#00773a;
+}
+
+section{
+padding:60px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#009e49;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:600px;
+margin:auto;
+}
+
+input,textarea{
+padding:15px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+button{
+padding:15px;
+background:#009e49;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>ENGOUANG FORTUNE</h1>
+<p>Découvrez les merveilles du Gabon</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#culture">Culture</a></li>
+<li><a href="#tourisme">Tourisme</a></li>
+<li><a href="#galerie">Galerie</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Bienvenue au Gabon 🇬🇦</h1>
+<p>Nature • Culture • Tourisme</p>
+<a class="btn" href="#culture">Découvrir</a>
+</section>
+
+<section id="culture">
+<h2>Culture Gabonaise</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Traditions</h3>
+<p>Le Gabon possède plus de 40 groupes ethniques aux traditions uniques.</p>
+</div>
+
+<div class="card">
+<h3>Gastronomie</h3>
+<p>Poulet Nyembwe, manioc, poisson braisé et bananes plantains.</p>
+</div>
+
+<div class="card">
+<h3>Musique</h3>
+<p>Des rythmes traditionnels et des danses qui font la richesse du pays.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="tourisme">
+
+<h2>Tourisme</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Libreville</h3>
+<p>La capitale moderne du Gabon.</p>
+</div>
+
+<div class="card">
+<h3>Parc National de Loango</h3>
+<p>Éléphants, gorilles, baleines et plages sauvages.</p>
+</div>
+
+<div class="card">
+<h3>Lopé</h3>
+<p>Patrimoine mondial de l'UNESCO.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galerie">
+
+<h2>Galerie</h2>
+
+<div class="gallery">
+
+<img src="https://source.unsplash.com/400x300/?gabon" alt="">
+<img src="https://source.unsplash.com/400x300/?africa,nature" alt="">
+<img src="https://source.unsplash.com/400x300/?gorilla" alt="">
+<img src="https://source.unsplash.com/400x300/?beach" alt="">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Carte du Gabon</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Gabon&output=embed"
+width="100%"
+height="400"
+style="border:0;border-radius:15px;">
+</iframe>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Votre nom">
+
+<input type="email" placeholder="Votre email">
+
+<textarea rows="6" placeholder="Votre message"></textarea>
+
+<button>Envoyer</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>Créé par ENGOUANG FORTUNE</h3>
+
+<p>© 2026 Tous droits réservés.</p>
+
+</footer>
+
+</body>
+  </html><section id="culture">
+
+<h2>Culture Gabonaise</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;">
+Le Gabon est un pays d'Afrique centrale reconnu pour sa diversité culturelle, ses traditions ancestrales et son patrimoine naturel exceptionnel.
+</p>
+
+<br><br>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎭 Traditions</h3>
+<p>Plus de 40 groupes ethniques contribuent à la richesse culturelle du Gabon grâce à leurs langues, leurs danses et leurs coutumes.</p>
+</div>
+
+<div class="card">
+<h3>🥘 Gastronomie</h3>
+<p>Découvrez le poulet Nyembwe, le poisson braisé, le manioc, les bananes plantains et de nombreuses spécialités locales.</p>
+</div>
+
+<div class="card">
+<h3>🥁 Musique & Danse</h3>
+<p>Les rythmes traditionnels, les chants et les cérémonies font partie intégrante de l'identité gabonaise.</p>
+</div>
+
+<div class="card">
+<h3>🌳 Nature</h3>
+<p>Le Gabon est l'un des pays les plus verts d'Afrique avec une forêt équatoriale couvrant une grande partie du territoire.</p>
+</div>
+
+</div>
+
+  </section><section id="tourisme">
+
+<h2>Les incontournables du Gabon</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏙 Libreville</h3>
+<p>La capitale moderne, entre plages, marchés et vie culturelle.</p>
+</div>
+
+<div class="card">
+<h3>🦍 Parc National de Loango</h3>
+<p>Connu pour ses éléphants, gorilles, hippopotames et plages sauvages.</p>
+</div>
+
+<div class="card">
+<h3>🌿 Parc National de la Lopé</h3>
+<p>Classé au patrimoine mondial de l'UNESCO pour sa biodiversité.</p>
+</div>
+
+<div class="card">
+<h3>🐢 Pongara</h3>
+<p>Un lieu exceptionnel pour observer les tortues marines.</p>
+</div>
+
+</div>
+
+  </section><section id="galerie">
+
+<h2>Galerie du Gabon</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80">
+
+</div>
+
+  </section><section>
+
+<h2>Localisation du Gabon</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Gabon&output=embed"
+width="100%"
+height="450"
+style="border:none;border-radius:20px;">
+</iframe>
+
+  </section><footer>
+
+<h2>ENGOUANG FORTUNE</h2>
+
+<p>Créateur de ce site consacré au Gabon 🇬🇦</p>
+
+<p>© 2026 ENGOUANG FORTUNE - Tous droits réservés.</p>
+
+  </footer>
