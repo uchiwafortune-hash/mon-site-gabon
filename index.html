@@ -1,0 +1,244 @@
+<section class="wiki-search">
+
+<h2>🔎 Gabon Explorer - Recherche</h2>
+
+<input 
+id="wikiInput"
+type="text"
+placeholder="Rechercher une information sur le Gabon..."
+>
+
+
+<div id="wikiResult"></div>
+
+
+</section>
+
+
+
+<style>
+
+.wiki-search{
+
+background:white;
+margin:30px;
+padding:30px;
+border-radius:20px;
+
+}
+
+
+
+#wikiInput{
+
+width:90%;
+padding:18px;
+font-size:20px;
+
+border-radius:30px;
+
+border:2px solid #00853f;
+
+}
+
+
+
+#wikiResult{
+
+margin-top:30px;
+
+background:#f2f2f2;
+
+padding:25px;
+
+border-radius:20px;
+
+}
+
+
+
+#wikiResult img{
+
+width:250px;
+
+border-radius:15px;
+
+}
+
+
+
+</style>
+
+
+
+
+
+<script>
+
+
+const baseGabon = [
+
+
+{
+
+nom:"Gabon",
+
+image:"images/gabon.jpg",
+
+categorie:"Pays",
+
+texte:
+"Le Gabon est un pays d'Afrique centrale situé sur la côte Atlantique. Il possède une grande biodiversité, neuf provinces et une riche diversité culturelle."
+
+},
+
+
+
+{
+
+nom:"Libreville",
+
+image:"images/libreville.jpg",
+
+categorie:"Ville",
+
+texte:
+"Libreville est la capitale du Gabon. Elle se trouve dans la province de l'Estuaire et constitue le principal centre administratif et économique du pays."
+
+},
+
+
+
+
+{
+
+nom:"Fang",
+
+image:"images/fang.jpg",
+
+categorie:"Ethnie",
+
+texte:
+"Les Fang sont un peuple important du Gabon. Leur culture est connue pour les traditions orales, les contes, la musique et l'art traditionnel."
+
+},
+
+
+
+
+{
+
+nom:"Mandrill",
+
+image:"images/mandrill.jpg",
+
+categorie:"Animal",
+
+texte:
+"Le mandrill est un primate vivant dans les forêts du Gabon. Il est célèbre pour ses couleurs et fait partie des espèces protégées."
+
+},
+
+
+
+
+{
+
+nom:"Parc national de Loango",
+
+image:"images/loango.jpg",
+
+categorie:"Tourisme",
+
+texte:
+"Le parc national de Loango est situé à l'ouest du Gabon. Il est connu pour ses plages sauvages, ses éléphants et sa biodiversité exceptionnelle."
+
+},
+
+
+
+
+{
+
+nom:"Indépendance du Gabon",
+
+image:"images/independance.jpg",
+
+categorie:"Histoire",
+
+texte:
+"Le Gabon devient indépendant le 17 août 1960 après la période coloniale française."
+
+}
+
+
+];
+
+
+
+
+
+let input=document.getElementById("wikiInput");
+
+
+input.addEventListener("keyup",()=>{
+
+
+let recherche=input.value.toLowerCase();
+
+
+let resultat=document.getElementById("wikiResult");
+
+
+
+let trouve=baseGabon.find(element=>
+
+element.nom.toLowerCase().includes(recherche)
+
+);
+
+
+
+if(trouve){
+
+
+resultat.innerHTML=`
+
+<img src="${trouve.image}">
+
+<h2>${trouve.nom}</h2>
+
+<h3>Catégorie : ${trouve.categorie}</h3>
+
+<p>${trouve.texte}</p>
+
+`;
+
+
+
+}
+
+else if(recherche===""){
+
+
+resultat.innerHTML="";
+
+}
+
+
+else{
+
+
+resultat.innerHTML=
+
+"❌ Aucun résultat trouvé dans Gabon Explorer.";
+
+
+}
+
+
+
+});
+
+
+</script>
