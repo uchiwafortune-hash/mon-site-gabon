@@ -1,0 +1,3960 @@
+/* =========================
+   GABON HORIZON 🇬🇦
+   STYLE COMPLET
+========================= */
+
+
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+body{
+
+background:#f4f7f5;
+
+color:#222;
+
+line-height:1.6;
+
+}
+
+
+
+
+
+
+/* HEADER */
+
+
+header{
+
+background:#006400;
+
+color:white;
+
+padding:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+
+
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+
+
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:10px;
+
+font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+color:#ffd700;
+
+}
+
+
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+min-height:80vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:40px;
+
+background:
+
+linear-gradient(
+rgba(0,80,40,0.7),
+rgba(0,0,0,0.5)
+),
+
+url("../images/gabon.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+color:white;
+
+}
+
+
+
+
+.hero h1{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+
+
+
+
+
+button{
+
+background:#ffd700;
+
+border:none;
+
+padding:15px 25px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+font-size:16px;
+
+font-weight:bold;
+
+margin-top:20px;
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+padding:50px 8%;
+
+}
+
+
+
+
+
+h2{
+
+text-align:center;
+
+margin-bottom:30px;
+
+color:#006400;
+
+}
+
+
+
+
+
+
+
+/* RECHERCHE */
+
+
+.recherche{
+
+background:white;
+
+text-align:center;
+
+}
+
+
+
+
+input{
+
+padding:15px;
+
+width:60%;
+
+max-width:500px;
+
+border-radius:30px;
+
+border:1px solid #ccc;
+
+font-size:16px;
+
+}
+
+
+
+
+
+
+
+
+
+/* CARTES */
+
+
+.cartes{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+
+
+.carte{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:
+
+0 5px 20px rgba(0,0,0,0.1);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+
+
+
+.carte:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+
+
+.carte h3{
+
+color:#006400;
+
+font-size:25px;
+
+}
+
+
+
+
+
+.carte a{
+
+display:inline-block;
+
+margin-top:15px;
+
+background:#006400;
+
+color:white;
+
+padding:10px 20px;
+
+border-radius:20px;
+
+text-decoration:none;
+
+}
+
+
+
+
+
+
+
+/* DECOUVERTE */
+
+
+.decouverte{
+
+background:white;
+
+border-radius:30px;
+
+margin:20px;
+
+text-align:center;
+
+}
+
+
+
+
+
+
+
+/* ESPACE ENFANTS */
+
+
+.enfants{
+
+background:#006400;
+
+color:white;
+
+text-align:center;
+
+border-radius:30px;
+
+margin:20px;
+
+}
+
+
+
+
+.enfants h2{
+
+color:white;
+
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#222;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+.carte{
+
+animation:
+
+apparition 1s ease;
+
+}
+
+
+
+
+@keyframes apparition{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* TELEPHONE */
+
+
+@media(max-width:768px){
+
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+
+.logo{
+
+font-size:22px;
+
+}
+
+
+
+nav{
+
+display:flex;
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+nav a{
+
+margin:5px;
+
+}
+
+
+
+
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+
+.hero p{
+
+font-size:17px;
+
+}
+
+
+
+input{
+
+width:90%;
+
+}
+
+
+
+section{
+
+padding:30px 5%;
+
+}
+
+
+
+.cartes{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+}/* =====================================
+   GABON HORIZON 🇬🇦
+   SCRIPT PRINCIPAL
+===================================== */
+
+
+
+// ==============================
+// MENU MOBILE
+// ==============================
+
+
+function ouvrirMenu(){
+
+let menu=document.querySelector("nav");
+
+if(menu){
+
+menu.classList.toggle("ouvert");
+
+}
+
+}
+
+
+
+
+
+
+
+// ==============================
+// ANIMATION AU SCROLL
+// ==============================
+
+
+let elements=document.querySelectorAll(
+".carte,.decouverte,.enfants"
+);
+
+
+
+function animation(){
+
+elements.forEach(element=>{
+
+
+let position=
+element.getBoundingClientRect().top;
+
+
+
+if(position < window.innerHeight - 80){
+
+
+element.style.opacity="1";
+
+element.style.transform="translateY(0)";
+
+
+}
+
+
+});
+
+
+}
+
+
+
+window.addEventListener(
+"scroll",
+animation
+);
+
+
+animation();
+
+
+
+
+
+
+
+
+// ==============================
+// BASE DE DONNÉES GABON
+// ==============================
+
+
+let donneesGabon=[
+
+
+{
+
+titre:"Éléphant de forêt",
+
+categorie:"Animaux",
+
+texte:"Grand mammifère vivant dans les forêts du Gabon."
+
+},
+
+
+{
+
+titre:"Gorille",
+
+categorie:"Animaux",
+
+texte:"Un primate protégé dans plusieurs parcs nationaux."
+
+},
+
+
+{
+
+titre:"Parc national de Loango",
+
+categorie:"Tourisme",
+
+texte:"Un lieu célèbre avec forêt, océan et animaux sauvages."
+
+},
+
+
+{
+
+titre:"Fleuve Ogooué",
+
+categorie:"Géographie",
+
+texte:"Le plus grand fleuve du Gabon."
+
+},
+
+
+{
+
+titre:"Libreville",
+
+categorie:"Ville",
+
+texte:"La capitale politique du Gabon."
+
+},
+
+
+{
+
+titre:"Peuples du Gabon",
+
+categorie:"Culture",
+
+texte:"Une grande diversité de communautés et de langues."
+
+},
+
+
+{
+
+titre:"Indépendance du Gabon",
+
+categorie:"Histoire",
+
+texte:"Le Gabon devient indépendant en 1960."
+
+},
+
+
+{
+
+titre:"Institutions du Gabon",
+
+categorie:"Politique",
+
+texte:"Organisation de la République gabonaise."
+
+}
+
+
+];
+
+
+
+
+
+
+
+
+
+// ==============================
+// RECHERCHE
+// ==============================
+
+
+
+function rechercherGabon(){
+
+
+let recherche=document
+.querySelector(".recherche input")
+.value
+.toLowerCase();
+
+
+
+let resultat="";
+
+
+
+donneesGabon.forEach(info=>{
+
+
+if(
+
+info.titre.toLowerCase()
+.includes(recherche)
+
+||
+
+info.categorie.toLowerCase()
+.includes(recherche)
+
+||
+
+info.texte.toLowerCase()
+.includes(recherche)
+
+
+){
+
+
+
+resultat+=`
+
+<div class="carte">
+
+<h3>${info.titre}</h3>
+
+<p>
+${info.categorie}
+</p>
+
+<p>
+${info.texte}
+</p>
+
+
+</div>
+
+`;
+
+
+
+}
+
+
+
+});
+
+
+
+
+
+if(resultat===""){
+
+
+resultat=`
+
+<div class="carte">
+
+<h3>Aucun résultat</h3>
+
+<p>
+Essaie un autre mot.
+</p>
+
+</div>
+
+`;
+
+}
+
+
+
+let zone=document.getElementById(
+"resultats"
+);
+
+
+
+if(zone){
+
+zone.innerHTML=resultat;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+// ==============================
+// QUIZ GABON
+// ==============================
+
+
+
+let score=0;
+
+
+
+function bonneReponse(){
+
+
+score+=10;
+
+
+let affichage=document
+.getElementById("score");
+
+
+
+if(affichage){
+
+affichage.innerHTML=
+score+" points";
+
+}
+
+
+
+alert(
+"Bravo ! Bonne réponse 🇬🇦"
+);
+
+
+}
+
+
+
+
+function mauvaiseReponse(){
+
+
+alert(
+"Réponse incorrecte, continue à apprendre !"
+);
+
+
+}
+
+
+
+
+
+
+
+
+// ==============================
+// RETOUR EN HAUT
+// ==============================
+
+
+
+function haut(){
+
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+
+}
+
+
+
+
+
+
+
+
+// ==============================
+// CHARGEMENT
+// ==============================
+
+
+window.onload=function(){
+
+
+console.log(
+"Gabon Horizon fonctionne correctement 🇬🇦"
+);
+
+
+};<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Histoire du Gabon 🇬🇦</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+🇬🇦 Gabon Horizon
+</div>
+
+
+<nav>
+
+<a href="../index.html">Accueil</a>
+
+<a href="histoire.html">Histoire</a>
+
+<a href="animaux.html">Animaux</a>
+
+<a href="politique.html">Politique</a>
+
+<a href="geographie.html">Géographie</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+📜 Histoire du Gabon
+</h1>
+
+
+<p>
+Découvrez l'évolution du Gabon à travers les siècles.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🌍 Les origines du Gabon
+</h2>
+
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+
+<h3>
+🏞️ Les premiers habitants
+</h3>
+
+
+<p>
+
+Le territoire gabonais est habité depuis plusieurs milliers
+d'années. Des populations anciennes vivaient de la chasse,
+de la pêche et de la collecte.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="carte">
+
+
+<h3>
+👥 Les peuples anciens
+</h3>
+
+
+<p>
+
+Au fil des siècles, plusieurs communautés se sont installées
+au Gabon avec leurs langues, leurs traditions et leurs
+organisations sociales.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+⛵ Les contacts avec le monde extérieur
+</h2>
+
+
+
+<div class="carte">
+
+
+<p>
+
+À partir du XVe siècle, des navigateurs européens arrivent
+sur les côtes gabonaises. Le nom "Gabon" serait lié à un terme
+portugais décrivant la forme de l'estuaire du Komo.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🏴 La période coloniale
+</h2>
+
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+
+<h3>
+🇫🇷 Colonisation française
+</h3>
+
+
+<p>
+
+À la fin du XIXe siècle, le Gabon devient une colonie
+française et fait partie de l'Afrique équatoriale française.
+
+</p>
+
+
+</div>
+
+
+
+<div class="carte">
+
+
+<h3>
+🌱 Transformations du pays
+</h3>
+
+
+<p>
+
+Cette période entraîne des changements dans l'administration,
+l'économie, les infrastructures et la société.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🇬🇦 L'indépendance du Gabon
+</h2>
+
+
+
+<div class="carte">
+
+
+<h3>
+17 août 1960
+</h3>
+
+
+<p>
+
+Le Gabon devient un pays indépendant.
+Cette date est aujourd'hui célébrée comme la fête nationale.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🏙️ Le Gabon moderne
+</h2>
+
+
+
+<div class="cartes">
+
+
+
+<div class="carte">
+
+<h3>
+🌆 Développement
+</h3>
+
+
+<p>
+
+Le pays développe ses secteurs économiques,
+ses villes, ses infrastructures et la protection
+de son patrimoine naturel.
+
+</p>
+
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🌳 Protection de la nature
+</h3>
+
+
+<p>
+
+Le Gabon crée plusieurs parcs nationaux pour protéger
+sa biodiversité exceptionnelle.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+⏳ Chronologie rapide
+</h2>
+
+
+
+<div class="carte">
+
+
+<ul>
+
+
+<li>
+🗿 Anciennes populations : présence humaine ancienne
+</li>
+
+
+<li>
+⛵ XVe siècle : arrivée des navigateurs européens
+</li>
+
+
+<li>
+🇫🇷 XIXe siècle : période coloniale française
+</li>
+
+
+<li>
+🇬🇦 1960 : indépendance du Gabon
+</li>
+
+
+<li>
+🌍 Aujourd'hui : développement et valorisation du patrimoine
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+Gabon Horizon 🇬🇦
+</h3>
+
+
+<p>
+Apprendre l'histoire du Gabon simplement.
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Animaux du Gabon 🇬🇦</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦 Gabon Horizon
+</div>
+
+
+<nav>
+
+<a href="../index.html">Accueil</a>
+
+<a href="histoire.html">Histoire</a>
+
+<a href="animaux.html">Animaux</a>
+
+<a href="politique.html">Politique</a>
+
+<a href="geographie.html">Géographie</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+🐘 Les animaux du Gabon
+</h1>
+
+
+<p>
+Découvre la richesse de la biodiversité gabonaise.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🌿 La biodiversité du Gabon
+</h2>
+
+
+<div class="carte">
+
+
+<p>
+
+Le Gabon possède l'une des plus grandes richesses
+naturelles d'Afrique centrale. Ses forêts tropicales,
+ses rivières et ses parcs nationaux abritent de
+nombreuses espèces animales.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🐾 Animaux emblématiques
+</h2>
+
+
+
+
+<div class="cartes">
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/animaux/elephant.jpg">
+
+
+<h3>
+🐘 Éléphant de forêt
+</h3>
+
+
+<p>
+
+Habitat : forêts tropicales.
+
+<br>
+
+Alimentation : plantes, fruits et feuilles.
+
+<br>
+
+Statut : espèce protégée.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/animaux/gorille.jpg">
+
+
+<h3>
+🦍 Gorille des plaines
+</h3>
+
+
+<p>
+
+Habitat : grandes forêts du Gabon.
+
+<br>
+
+Alimentation : fruits et végétaux.
+
+<br>
+
+Animal protégé dans plusieurs parcs.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/animaux/panthere.jpg">
+
+
+<h3>
+🐆 Panthère
+</h3>
+
+
+<p>
+
+Un félin discret vivant dans les zones
+forestières.
+
+<br>
+
+Elle chasse principalement de petits animaux.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/animaux/mendrill.jpg">
+
+
+<h3>
+🐒 Mandrill
+</h3>
+
+
+<p>
+
+Un primate connu pour ses couleurs
+exceptionnelles.
+
+<br>
+
+Présent dans les forêts gabonaises.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/animaux/tortue.jpg">
+
+
+<h3>
+🐢 Tortue marine
+</h3>
+
+
+<p>
+
+Certaines plages du Gabon accueillent
+des tortues venues pondre leurs œufs.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/animaux/perroquet.jpg">
+
+
+<h3>
+🦜 Perroquet
+</h3>
+
+
+<p>
+
+Oiseau coloré vivant dans les forêts
+tropicales.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🏞️ Les lieux de protection
+</h2>
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+<h3>
+🌊 Parc national de Loango
+</h3>
+
+<p>
+
+Protège les forêts, les plages et
+de nombreuses espèces sauvages.
+
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🌳 Parc national d'Ivindo
+</h3>
+
+<p>
+
+Connu pour ses forêts anciennes,
+ses rivières et ses cascades.
+
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🦍 Parc national de la Lopé
+</h3>
+
+<p>
+
+Zone importante pour la conservation
+des grands mammifères.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🔎 Recherche un animal
+</h2>
+
+
+
+<input 
+id="rechercheAnimal"
+placeholder="Exemple : éléphant..."
+>
+
+
+<button onclick="chercherAnimal()">
+
+Rechercher
+
+</button>
+
+
+
+<div id="resultatAnimal"></div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+let animaux=[
+
+
+"Éléphant de forêt : grand mammifère des forêts gabonaises",
+
+"Gorille : primate protégé vivant dans les forêts",
+
+"Panthère : félin sauvage",
+
+"Mandrill : singe aux couleurs remarquables",
+
+"Tortue marine : présente sur les côtes du Gabon",
+
+"Perroquet : oiseau des forêts tropicales"
+
+
+];
+
+
+
+
+
+function chercherAnimal(){
+
+
+let mot=document
+
+.getElementById("rechercheAnimal")
+
+.value
+
+.toLowerCase();
+
+
+
+let resultat="";
+
+
+
+animaux.forEach(animal=>{
+
+
+if(animal.toLowerCase().includes(mot)){
+
+
+resultat+=`
+
+<div class="carte">
+
+<h3>${animal}</h3>
+
+</div>
+
+`;
+
+}
+
+
+});
+
+
+
+if(resultat===""){
+
+resultat="Aucun animal trouvé.";
+
+}
+
+
+
+document.getElementById(
+
+"resultatAnimal"
+
+).innerHTML=resultat;
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+Gabon Horizon 🇬🇦
+</h3>
+
+
+<p>
+Découvrir et protéger la nature gabonaise.
+</p>
+
+
+</footer>
+
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Politique du Gabon 🇬🇦</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦 Gabon Horizon
+</div>
+
+
+<nav>
+
+<a href="../index.html">Accueil</a>
+
+<a href="histoire.html">Histoire</a>
+
+<a href="animaux.html">Animaux</a>
+
+<a href="politique.html">Politique</a>
+
+<a href="geographie.html">Géographie</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+🏛️ La République gabonaise
+</h1>
+
+
+<p>
+Comprendre l'organisation politique et administrative du Gabon.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🇬🇦 Présentation de l'État
+</h2>
+
+
+<div class="carte">
+
+
+<p>
+
+Le Gabon est une République située en Afrique centrale.
+Son organisation repose sur des institutions chargées
+de gérer le fonctionnement du pays.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🏛️ Les principales institutions
+</h2>
+
+
+
+<div class="cartes">
+
+
+
+<div class="carte">
+
+
+<h3>
+👤 Présidence de la République
+</h3>
+
+
+<p>
+
+La présidence représente l'État et participe
+à la définition des grandes orientations nationales.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="carte">
+
+
+<h3>
+🏢 Gouvernement
+</h3>
+
+
+<p>
+
+Le gouvernement est chargé de mettre en œuvre
+les politiques publiques dans différents secteurs :
+éducation, santé, économie, environnement.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="carte">
+
+
+<h3>
+📜 Parlement
+</h3>
+
+
+<p>
+
+Le Parlement participe au vote des lois
+et au contrôle de l'action publique.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="carte">
+
+
+<h3>
+⚖️ Justice
+</h3>
+
+
+<p>
+
+La justice veille au respect des lois
+et des droits des citoyens.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🌍 Organisation administrative
+</h2>
+
+
+
+<div class="carte">
+
+
+<p>
+
+Le Gabon est divisé en 9 provinces :
+
+</p>
+
+
+<ul>
+
+
+<li>Estuaire</li>
+
+<li>Haut-Ogooué</li>
+
+<li>Moyen-Ogooué</li>
+
+<li>Ngounié</li>
+
+<li>Nyanga</li>
+
+<li>Ogooué-Ivindo</li>
+
+<li>Ogooué-Lolo</li>
+
+<li>Ogooué-Maritime</li>
+
+<li>Woleu-Ntem</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+👥 Vie politique et citoyenne
+</h2>
+
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+
+<h3>
+🗳️ Élections
+</h3>
+
+
+<p>
+
+Les citoyens participent à la vie démocratique
+par les élections et les consultations publiques.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="carte">
+
+
+<h3>
+📚 Citoyenneté
+</h3>
+
+
+<p>
+
+La citoyenneté comprend les droits,
+les devoirs et la participation à la société.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🔎 Recherche politique
+</h2>
+
+
+
+<input 
+id="recherchePolitique"
+placeholder="Exemple : gouvernement, provinces..."
+>
+
+
+
+<button onclick="chercherPolitique()">
+
+Rechercher
+
+</button>
+
+
+
+<div id="resultatPolitique"></div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+let politique=[
+
+
+"Présidence : institution représentant l'État",
+
+"Gouvernement : applique les politiques publiques",
+
+"Parlement : vote les lois",
+
+"Justice : garantit l'application des lois",
+
+"Provinces : neuf divisions administratives du Gabon",
+
+"Citoyenneté : droits et devoirs des citoyens"
+
+
+];
+
+
+
+
+
+function chercherPolitique(){
+
+
+let mot=document
+
+.getElementById("recherchePolitique")
+
+.value
+
+.toLowerCase();
+
+
+
+let resultat="";
+
+
+
+politique.forEach(info=>{
+
+
+if(info.toLowerCase().includes(mot)){
+
+
+resultat+=`
+
+<div class="carte">
+
+<h3>${info}</h3>
+
+</div>
+
+`;
+
+}
+
+
+});
+
+
+
+if(resultat===""){
+
+resultat="Aucune information trouvée.";
+
+}
+
+
+
+document.getElementById(
+
+"resultatPolitique"
+
+).innerHTML=resultat;
+
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+Gabon Horizon 🇬🇦
+</h3>
+
+
+<p>
+Apprendre le fonctionnement du Gabon.
+</p>
+
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Géographie du Gabon 🇬🇦</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦 Gabon Horizon
+</div>
+
+
+<nav>
+
+<a href="../index.html">Accueil</a>
+
+<a href="histoire.html">Histoire</a>
+
+<a href="animaux.html">Animaux</a>
+
+<a href="politique.html">Politique</a>
+
+<a href="geographie.html">Géographie</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>
+🌍 Géographie du Gabon
+</h1>
+
+
+<p>
+Découvre les provinces, fleuves, lacs et paysages du pays.
+</p>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+<h2>
+🇬🇦 Présentation générale
+</h2>
+
+
+<div class="carte">
+
+<p>
+
+Le Gabon est un pays d'Afrique centrale.
+Il est bordé par l'océan Atlantique et possède
+une immense couverture forestière.
+
+Sa capitale est Libreville.
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+<h2>
+🗺️ Les 9 provinces du Gabon
+</h2>
+
+
+<div class="cartes">
+
+
+<div class="carte">
+<h3>Estuaire</h3>
+<p>Capitale : Libreville</p>
+</div>
+
+
+<div class="carte">
+<h3>Haut-Ogooué</h3>
+<p>Ville principale : Franceville</p>
+</div>
+
+
+<div class="carte">
+<h3>Ogooué-Maritime</h3>
+<p>Ville principale : Port-Gentil</p>
+</div>
+
+
+<div class="carte">
+<h3>Ogooué-Ivindo</h3>
+<p>Ville principale : Makokou</p>
+</div>
+
+
+<div class="carte">
+<h3>Ngounié</h3>
+<p>Ville principale : Mouila</p>
+</div>
+
+
+<div class="carte">
+<h3>Nyanga</h3>
+<p>Ville principale : Tchibanga</p>
+</div>
+
+
+<div class="carte">
+<h3>Moyen-Ogooué</h3>
+<p>Ville principale : Lambaréné</p>
+</div>
+
+
+<div class="carte">
+<h3>Woleu-Ntem</h3>
+<p>Ville principale : Oyem</p>
+</div>
+
+
+<div class="carte">
+<h3>Ogooué-Lolo</h3>
+<p>Ville principale : Koulamoutou</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+<h2>
+🌊 Fleuves et lacs
+</h2>
+
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+<h3>
+🌊 Fleuve Ogooué
+</h3>
+
+<p>
+
+Le plus grand fleuve du Gabon.
+Il traverse une grande partie du pays.
+
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🌊 Fleuve Komo
+</h3>
+
+<p>
+
+Cours d'eau important de la région de l'Estuaire.
+
+</p>
+
+</div>
+
+
+
+
+<div class="carte">
+
+<h3>
+🌊 Fleuve Nyanga
+</h3>
+
+<p>
+
+Fleuve situé dans le sud du Gabon.
+
+</p>
+
+</div>
+
+
+
+
+<div class="carte">
+
+<h3>
+🏞️ Lac Onangué
+</h3>
+
+<p>
+
+Un des lacs naturels du Gabon.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+⛰️ Relief et paysages
+</h2>
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+<h3>
+🌳 Forêts tropicales
+</h3>
+
+<p>
+
+Le Gabon possède une grande partie
+de son territoire couverte par la forêt.
+
+</p>
+
+</div>
+
+
+
+
+<div class="carte">
+
+<h3>
+⛰️ Monts de Cristal
+</h3>
+
+<p>
+
+Zone montagneuse connue pour
+sa biodiversité.
+
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🏞️ Massif du Chaillu
+</h3>
+
+<p>
+
+Région de reliefs et de forêts.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+<h2>
+🗺️ Carte interactive
+</h2>
+
+
+<div class="carte">
+
+<p>
+
+La carte interactive sera ajoutée ici :
+provinces cliquables, villes, sites touristiques
+et informations détaillées.
+
+</p>
+
+
+<iframe
+
+src="https://www.openstreetmap.org/export/embed.html"
+
+width="100%"
+
+height="400">
+
+</iframe>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<h3>
+Gabon Horizon 🇬🇦
+</h3>
+
+<p>
+Explorer la géographie du Gabon.
+</p>
+
+</footer>
+
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tourisme et Culture du Gabon 🇬🇦</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦 Gabon Horizon
+</div>
+
+
+<nav>
+
+<a href="../index.html">Accueil</a>
+
+<a href="histoire.html">Histoire</a>
+
+<a href="animaux.html">Animaux</a>
+
+<a href="geographie.html">Géographie</a>
+
+<a href="tourisme.html">Tourisme</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+🌿 Découvrir le tourisme du Gabon
+</h1>
+
+
+<p>
+Explore les paysages, les cultures et les trésors naturels.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🏞️ Les grands sites touristiques
+</h2>
+
+
+<div class="cartes">
+
+
+
+<div class="carte">
+
+<img src="../images/tourisme/loango.jpg">
+
+<h3>
+🌊 Parc national de Loango
+</h3>
+
+
+<p>
+
+Un parc exceptionnel où la forêt rencontre
+l'océan Atlantique. Il est connu pour sa
+biodiversité et ses paysages uniques.
+
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+<img src="../images/tourisme/ivindo.jpg">
+
+<h3>
+🌳 Parc national d'Ivindo
+</h3>
+
+
+<p>
+
+Célèbre pour ses forêts anciennes,
+ses rivières et les cascades de Kongou.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+<img src="../images/tourisme/lopé.jpg">
+
+<h3>
+🐘 Parc national de la Lopé
+</h3>
+
+
+<p>
+
+Un site reconnu pour ses animaux sauvages,
+ses paysages et son patrimoine naturel.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+<img src="../images/tourisme/pongara.jpg">
+
+<h3>
+🏝️ Parc national de Pongara
+</h3>
+
+
+<p>
+
+Une zone proche de Libreville avec des plages,
+des mangroves et une grande diversité naturelle.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🎭 Culture et traditions gabonaises
+</h2>
+
+
+
+<div class="cartes">
+
+
+
+<div class="carte">
+
+
+<img src="../images/culture/masque.jpg">
+
+
+<h3>
+🗿 Masques traditionnels
+</h3>
+
+
+<p>
+
+Les masques occupent une place importante
+dans les cérémonies et l'art gabonais.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/culture/danse.jpg">
+
+
+<h3>
+💃 Danses traditionnelles
+</h3>
+
+
+<p>
+
+Les danses racontent des histoires,
+des traditions et des moments importants
+de la vie communautaire.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<img src="../images/culture/musique.jpg">
+
+
+<h3>
+🥁 Musiques
+</h3>
+
+
+<p>
+
+Les instruments traditionnels comme les tambours
+accompagnent les fêtes et cérémonies.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🍲 Gastronomie gabonaise
+</h2>
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+<h3>
+🍗 Poulet Nyembwé
+</h3>
+
+
+<p>
+
+Plat traditionnel préparé avec la noix de palme.
+
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🐟 Poissons et produits du fleuve
+</h3>
+
+
+<p>
+
+La cuisine gabonaise utilise beaucoup
+les ressources des rivières et de l'océan.
+
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🍌 Cuisine traditionnelle
+</h3>
+
+
+<p>
+
+Elle comprend des tubercules, fruits,
+légumes et recettes transmises entre générations.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🔎 Recherche touristique
+</h2>
+
+
+
+<input 
+id="rechercheTourisme"
+placeholder="Exemple : Loango, culture..."
+>
+
+
+<button onclick="chercherTourisme()">
+
+Rechercher
+
+</button>
+
+
+
+<div id="resultatTourisme"></div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+let tourisme=[
+
+
+"Loango : parc national entre forêt et océan",
+
+"Ivindo : cascades et forêt tropicale",
+
+"Lopé : patrimoine naturel du Gabon",
+
+"Pongara : plages et mangroves",
+
+"Masques : art traditionnel gabonais",
+
+"Danses : expression culturelle",
+
+"Nyembwé : plat traditionnel"
+
+
+];
+
+
+
+
+function chercherTourisme(){
+
+
+let mot=document
+.getElementById("rechercheTourisme")
+.value
+.toLowerCase();
+
+
+
+let resultat="";
+
+
+
+tourisme.forEach(info=>{
+
+
+if(info.toLowerCase().includes(mot)){
+
+
+resultat+=`
+
+<div class="carte">
+
+<h3>${info}</h3>
+
+</div>
+
+`;
+
+}
+
+
+});
+
+
+
+if(resultat===""){
+
+resultat="Aucun résultat trouvé.";
+
+}
+
+
+
+document.getElementById(
+"resultatTourisme"
+).innerHTML=resultat;
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+<footer>
+
+<h3>
+Gabon Horizon 🇬🇦
+</h3>
+
+<p>
+Découvrir les richesses du Gabon.
+</p>
+
+</footer>
+
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz du Gabon 🇬🇦</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦 Gabon Horizon
+</div>
+
+
+<nav>
+
+<a href="../index.html">Accueil</a>
+
+<a href="histoire.html">Histoire</a>
+
+<a href="animaux.html">Animaux</a>
+
+<a href="geographie.html">Géographie</a>
+
+<a href="quiz.html">Quiz</a>
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<section class="hero">
+
+<div>
+
+<h1>
+🎮 Quiz sur le Gabon
+</h1>
+
+<p>
+Apprends le Gabon en t'amusant !
+</p>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🌟 Teste tes connaissances
+</h2>
+
+
+
+<div class="carte">
+
+
+<h3>
+1) Quelle est la capitale du Gabon ?
+</h3>
+
+
+<button onclick="bonne()">
+Libreville
+</button>
+
+
+<button onclick="fausse()">
+Franceville
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<h3>
+2) Quel est le plus grand fleuve du Gabon ?
+</h3>
+
+
+<button onclick="bonne()">
+Ogooué
+</button>
+
+
+<button onclick="fausse()">
+Congo
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<h3>
+3) Quel animal est emblématique des forêts gabonaises ?
+</h3>
+
+
+<button onclick="bonne()">
+Éléphant de forêt
+</button>
+
+
+<button onclick="fausse()">
+Pingouin
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="carte">
+
+
+<h3>
+4) En quelle année le Gabon devient indépendant ?
+</h3>
+
+
+<button onclick="bonne()">
+1960
+</button>
+
+
+<button onclick="fausse()">
+2000
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<h2 id="score">
+
+Score : 0
+
+</h2>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<h3>
+Gabon Horizon 🇬🇦
+</h3>
+
+
+<p>
+Apprendre le Gabon en jouant.
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script>
+
+
+let score=0;
+
+
+
+function bonne(){
+
+
+score+=25;
+
+
+document.getElementById("score").innerHTML=
+
+"Score : "+score+" points";
+
+
+alert("Bravo ! Bonne réponse 🇬🇦");
+
+
+}
+
+
+
+function fausse(){
+
+
+alert(
+"Ce n'est pas la bonne réponse. Continue à apprendre !"
+);
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Documentation Gabon Horizon 🇬🇦</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🇬🇦 Gabon Horizon
+</div>
+
+
+<nav>
+
+<a href="../index.html">Accueil</a>
+
+<a href="histoire.html">Histoire</a>
+
+<a href="animaux.html">Animaux</a>
+
+<a href="geographie.html">Géographie</a>
+
+<a href="quiz.html">Quiz</a>
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+📚 Documentation Gabon Horizon
+</h1>
+
+
+<p>
+Comprendre le fonctionnement de la plateforme.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🌍 Objectif du site
+</h2>
+
+
+<div class="carte">
+
+
+<p>
+
+Gabon Horizon est une plateforme éducative
+qui permet de découvrir le Gabon :
+son histoire, sa culture, sa nature,
+sa géographie et son patrimoine.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+📖 Les différentes parties du site
+</h2>
+
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+<h3>
+📜 Histoire
+</h3>
+
+<p>
+Découvrir l'évolution du Gabon
+à travers les siècles.
+</p>
+
+</div>
+
+
+
+
+<div class="carte">
+
+<h3>
+🐘 Animaux
+</h3>
+
+<p>
+Explorer la biodiversité et les espèces protégées.
+</p>
+
+</div>
+
+
+
+
+<div class="carte">
+
+<h3>
+🌍 Géographie
+</h3>
+
+<p>
+Comprendre les provinces,
+fleuves, lacs et paysages.
+</p>
+
+</div>
+
+
+
+
+<div class="carte">
+
+<h3>
+🎭 Culture
+</h3>
+
+<p>
+Découvrir les peuples, langues,
+arts et traditions.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+👨‍👩‍👧 Pour tous les utilisateurs
+</h2>
+
+
+<div class="carte">
+
+
+<ul>
+
+<li>👦 Enfants : apprendre avec des quiz.</li>
+
+<li>🎓 Étudiants : rechercher des informations.</li>
+
+<li>🌍 Visiteurs : découvrir le pays.</li>
+
+<li>🇬🇦 Gabonais : valoriser le patrimoine.</li>
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+🚀 Améliorations futures
+</h2>
+
+
+<div class="cartes">
+
+
+<div class="carte">
+
+<h3>
+📱 Application mobile
+</h3>
+
+<p>
+Transformer la plateforme en application.
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🤖 Intelligence artificielle
+</h3>
+
+<p>
+Créer un assistant qui répond aux questions
+sur le Gabon.
+</p>
+
+</div>
+
+
+
+<div class="carte">
+
+<h3>
+🗺️ Visites virtuelles
+</h3>
+
+<p>
+Explorer les lieux du Gabon en 3D.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+Gabon Horizon 🇬🇦
+</h3>
+
+
+<p>
+Projet éducatif de découverte du Gabon.
+</p>
+
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html><!-- INTRODUCTION LOGO -->
+
+<div id="intro">
+
+    <div class="logo-animation">
+
+        <div class="drapeau">
+            🇬🇦
+        </div>
+
+        <h1>
+            Gabon Horizon
+        </h1>
+
+        <p>
+            Découvrir le Gabon autrement
+        </p>
+
+    </div>
+
+</div>
