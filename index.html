@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabon Evasion - Par FORTUNE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- EN-TÊTE MODERNE AVEC PROFIL FORTUNE -->
+  <header class="navbar">
+    <div class="logo-box">
+      <div class="logo-badge">🇬🇦</div>
+      <div class="logo-text">
+        <span class="site-name">GABON EXPLORER</span>
+        <span class="author">Par <strong>FORTUNE</strong></span>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#accueil" class="active">🏠 Accueil</a>
+      <a href="histoire.html">📜 Histoire</a>
+      <a href="animaux.html">🦁 Faune</a>
+      <a href="politique.html">🏛️ Politique</a>
+      <a href="ethnies.html">🎭 Ethnies</a>
+      <a href="cuisine.html">🍲 Cuisine</a>
+      <a href="provinces.html">🗺️ Provinces</a>
+      <a href="tourisme.html">✈️ Tourisme</a>
+      <a href="quiz.html">🏆 Quiz</a>
+    </nav>
+  </header>
+
+  <!-- BANNIÈRE D'ACCUEIL JEUNE ET DYNAMIQUE -->
+  <section id="accueil" class="hero">
+    <div class="hero-content">
+      <div class="badge-tag">🔥 Le guide ultime 100% Gabon</div>
+      <h1>Explore le Gabon comme tu ne l'as jamais vu !</h1>
+      <p>Des jungles immenses, une faune incroyable, des plats savoureux et une culture vibrante. Prêt pour l'aventure ?</p>
+      
+      <!-- BARRE DE RECHERCHE INTELLIGENTE -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="🔍 Cherche un truc cool (ex: gorille, poulet nyembwe, Bwiti, Loango...)" onkeyup="filtrerCartes()">
+      </div>
+    </div>
+  </section>
+
+  <!-- GRILLE DES CATEGORIES -->
+  <main class="main-container">
+    <h2 class="title-section">Tout l'univers du Gabon en un clic 👇</h2>
+
+    <div class="cards-grid" id="cardsGrid">
+
+      <!-- CARD 1: HISTOIRE -->
+      <article class="card" data-tags="histoire passe pygmées bande independance 1960">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" alt="Histoire du Gabon">
+          <span class="tag-category">📜 Récit</span>
+        </div>
+        <div class="card-body">
+          <h3>L'Histoire du Pays</h3>
+          <p>
+            Savais-tu que les premiers habitants du Gabon étaient les peuples Pygmées ? Ils connaissaient la forêt équatoriale comme leur poche bien avant tout le monde !
+          </p>
+          <p>
+            Découvre comment le pays s'est construit, des grandes migrations au chemin vers l'indépendance en 1960. Une aventure à travers le temps !
+          </p>
+          <a href="histoire.html" class="btn-card">Découvrir l'histoire ➔</a>
+        </div>
+      </article>
+
+      <!-- CARD 2: FAUNE ET NATURE -->
+      <article class="card" data-tags="animaux faune nature elephants gorilles mandrill parcs loango">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=600&q=80" alt="Animaux du Gabon">
+          <span class="tag-category">🦍 Nature Wild</span>
+        </div>
+        <div class="card-body">
+          <h3>Les Animaux & la Nature</h3>
+          <p>
+            Le Gabon est surnommé le « Poumon Vert » de la planète ! Plus de 80% de son territoire est recouvert par une jungle sauvage et préservée.
+          </p>
+          <p>
+            Ici, tu peux croiser des éléphants de forêt qui se baladent sur la plage, des gorilles impressionnants et des bandes de mandrills multicolores.
+          </p>
+          <a href="animaux.html" class="btn-card">Rencontrer les animaux ➔</a>
+        </div>
+      </article>
+
+      <!-- CARD 3: POLITIQUE -->
+      <article class="card" data-tags="politique president ministre gouverneur capitale libreville etat">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80" alt="Politique Gabon">
+          <span class="tag-category">🏛️ Governance</span>
+        </div>
+        <div class="card-body">
+          <h3>Politique & Institutions</h3>
+          <p>
+            Comment fonctionne le pays au quotidien ? Découvre les rouages de l'État expliqué de façon simple et claire sans prise de tête.
+          </p>
+          <p>
+            Comprends le rôle du Président, de l'équipe des Ministres, ainsi que des Gouverneurs qui dirigent chacune des 9 provinces.
+          </p>
+          <a href="politique.html" class="btn-card">Comprendre la politique ➔</a>
+        </div>
+      </article>
+
+      <!-- CARD 4: ETHNIES ET CULTURE -->
+      <article class="card" data-tags="ethnies culture fang punu myene bwiti masques danses">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80" alt="Culture du Gabon">
+          <span class="tag-category">🎭 Vibes & Traditions</span>
+        </div>
+        <div class="card-body">
+          <h3>Ethnies & Culture</h3>
+          <p>
+            Le Gabon regroupe plus de 50 ethnies qui vivent en harmonie ! Chaque groupe possède ses propres secrets, contes, danses et musiques.
+          </p>
+          <p>
+            Des Fangs aux Punu en passant par les Myènè, plonge dans l'univers mystique des masques traditionnels et des rites légendaires comme le Bwiti.
+          </p>
+          <a href="ethnies.html" class="btn-card">Explorer les cultures ➔</a>
+        </div>
+      </article>
+
+      <!-- CARD 5: GASTRONOMIE -->
+      <article class="card" data-tags="cuisine plats poulet nyembwe odika manioc poisson gourmand">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Cuisine gabonaise">
+          <span class="tag-category">🍲 Yummy</span>
+        </div>
+        <div class="card-body">
+          <h3>Plats & Recettes</h3>
+          <p>
+            Prépare tes papilles ! La cuisine gabonaise est un mélange explosif entre épices de la forêt et poissons frais de l'océan.
+          </p>
+          <p>
+            Apprends à cuisiner l'incontournable Poulet Nyembwe, le fameux sauce Odika (chocolat indigène) ou les bâtons de manioc avec leurs recettes étape par étape.
+          </p>
+          <a href="cuisine.html" class="btn-card">Découvrir les plats ➔</a>
+        </div>
+      </article>
+
+      <!-- CARD 6: PROVINCES -->
+      <article class="card" data-tags="provinces estuaire haut-ogooue franceville libreville carte">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=600&q=80" alt="Provinces du Gabon">
+          <span class="tag-category">🗺️ Territoire</span>
+        </div>
+        <div class="card-body">
+          <h3>Les 9 Provinces</h3>
+          <p>
+            De l'Estuaire jusqu'au Haut-Ogooué, le territoire gabonais est découpé en 9 provinces uniques avec leurs villes et paysages emblématiques.
+          </p>
+          <p>
+            Découvre le chef-lieu de chaque région, leurs spécialités économiques et ce qui fait la fierté de leurs habitants.
+          </p>
+          <a href="provinces.html" class="btn-card">Faire le tour des provinces ➔</a>
+        </div>
+      </article>
+
+      <!-- CARD 7: TOURISME -->
+      <article class="card" data-tags="tourisme plages loango ivindo cascades spots vacances">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Lieux touristiques">
+          <span class="tag-category">🏖️ Travel & Adventure</span>
+        </div>
+        <div class="card-body">
+          <h3>Spots Touristiques</h3>
+          <p>
+            Envie d'évasion ? Le Gabon abrite des spots parmi les plus préservés de la planète : chutes spectaculaires, plages désertes et forêts mystiques.
+          </p>
+          <p>
+            Repère les meilleurs endroits à visiter comme le parc national de Loango ou les chutes de l'Ivindo avec nos guides pratiques.
+          </p>
+          <a href="tourisme.html" class="btn-card">Voir les lieux uniques ➔</a>
+        </div>
+      </article>
+
+      <!-- CARD 8: QUIZ -->
+      <article class="card" data-tags="quiz jeu test questions points niveau gagnant">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=600&q=80" alt="Quiz Gabon">
+          <span class="tag-category">🎮 Challenge</span>
+        </div>
+        <div class="card-body">
+          <h3>Quiz & Defis</h3>
+          <p>
+            Tu penses être un vrai connaisseur du Gabon ? Viens tester tes connaissances et défier tes amis avec nos quiz interactifs !
+          </p>
+          <p>
+            Réponds aux questions rapides sur l'histoire, la faune et la culture pour accumuler des points et devenir un Master du Gabon.
+          </p>
+          <a href="quiz.html" class="btn-card">Relever le défi ➔</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>⚡ Conception & Réalisation par <strong>FORTUNE</strong> | 2026</p>
+    <p class="sub-footer">Fait avec passion pour faire briller le Gabon 🇬🇦</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
