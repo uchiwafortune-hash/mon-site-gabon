@@ -481,3 +481,1239 @@ Tous droits réservés.
 </body>
 
   </html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AnimeWorld - ENGOUANG FORTUNE</title>
+
+<meta name="author" content="ENGOUANG FORTUNE">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+
+body{
+
+background:#080808;
+color:white;
+
+}
+
+
+/* MENU */
+
+header{
+
+position:sticky;
+top:0;
+z-index:10;
+
+background:#000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px;
+
+}
+
+
+.logo{
+
+font-size:30px;
+font-weight:bold;
+color:#ff0055;
+
+}
+
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:12px;
+
+}
+
+
+nav a:hover{
+
+color:#ff0055;
+
+}
+
+
+
+/* GRANDE BANNIERE */
+
+
+.hero{
+
+
+height:500px;
+
+
+background:
+
+linear-gradient(
+90deg,
+#000,
+transparent
+),
+
+url("https://images.unsplash.com/photo-1578632767115-351597cf2477");
+
+
+background-size:cover;
+
+background-position:center;
+
+
+display:flex;
+
+align-items:center;
+
+padding:40px;
+
+
+}
+
+
+
+.hero h1{
+
+font-size:50px;
+
+max-width:600px;
+
+}
+
+
+
+.hero p{
+
+font-size:22px;
+
+margin-top:20px;
+
+}
+
+
+
+.btn{
+
+
+background:#ff0055;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:30px;
+
+margin-top:25px;
+
+font-size:17px;
+
+cursor:pointer;
+
+
+}
+
+
+
+/* RECHERCHE */
+
+
+.search-box{
+
+padding:30px;
+
+text-align:center;
+
+}
+
+
+.search-box input{
+
+width:90%;
+
+max-width:600px;
+
+padding:15px;
+
+border-radius:30px;
+
+border:none;
+
+font-size:18px;
+
+}
+
+
+
+/* TITRES */
+
+
+.title{
+
+padding:30px;
+
+font-size:30px;
+
+color:#ff0055;
+
+}
+
+
+
+/* CARTES */
+
+
+.container{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+padding:30px;
+
+}
+
+
+
+.card{
+
+
+background:#181818;
+
+width:200px;
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:.3s;
+
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 20px #ff0055;
+
+}
+
+
+
+.card img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+
+}
+
+
+
+.card h3{
+
+padding:10px;
+
+}
+
+
+.card p{
+
+padding:0 10px;
+
+color:#bbb;
+
+}
+
+
+
+.watch{
+
+margin:10px;
+
+width:90%;
+
+padding:12px;
+
+border:none;
+
+border-radius:10px;
+
+background:#ff0055;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#000;
+
+text-align:center;
+
+padding:30px;
+
+color:#aaa;
+
+}
+
+
+
+footer strong{
+
+color:#ff0055;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+
+.card{
+
+width:160px;
+
+}
+
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+
+🍥 AnimeWorld
+
+</div>
+
+
+<nav>
+
+<a href="#">Accueil</a>
+
+<a href="#anime">Animés</a>
+
+<a href="#genres">Genres</a>
+
+<a href="#profil">Profil</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+Le meilleur du streaming animé
+</h1>
+
+
+<p>
+Regarde tes animés préférés en haute qualité.
+</p>
+
+
+<button class="btn">
+
+Commencer
+
+</button>
+
+
+</div>
+
+
+</section><section id="anime">
+
+<h2 class="title">
+🔥 Animés populaires
+</h2>
+
+
+<div class="container">
+
+
+
+<div class="card">
+
+<img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg">
+
+<h3>One Piece</h3>
+
+<p>
+⭐ 9.0<br>
+Aventure • Action • Pirates
+</p>
+
+<button class="watch" onclick="ouvrirAnime('One Piece')">
+Voir les épisodes
+</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://cdn.myanimelist.net/images/anime/13/17405.jpg">
+
+<h3>Naruto</h3>
+
+<p>
+⭐ 8.5<br>
+Ninja • Combat
+</p>
+
+<button class="watch" onclick="ouvrirAnime('Naruto')">
+Voir les épisodes
+</button>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg">
+
+<h3>Jujutsu Kaisen</h3>
+
+<p>
+⭐ 8.9<br>
+Fantastique • Action
+</p>
+
+<button class="watch" onclick="ouvrirAnime('Jujutsu Kaisen')">
+Voir les épisodes
+</button>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<img src="https://cdn.myanimelist.net/images/anime/5/59411.jpg">
+
+<h3>Dragon Ball</h3>
+
+<p>
+⭐ 9.1<br>
+Combat • Aventure
+</p>
+
+<button class="watch" onclick="ouvrirAnime('Dragon Ball')">
+Voir les épisodes
+</button>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<img src="https://cdn.myanim<section id="player">
+
+
+<h2 class="title">
+▶ Lecture de l'épisode
+</h2>
+
+
+
+<div style="
+max-width:900px;
+margin:auto;
+padding:20px;
+">
+
+
+<h2 id="animeTitle">
+Choisis un animé
+</h2>
+
+
+
+<video 
+id="videoPlayer"
+controls
+style="
+width:100%;
+background:black;
+border-radius:15px;
+">
+
+<source id="videoSource" src="">
+
+
+Votre navigateur ne supporte pas la vidéo.
+
+</video>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="container" id="episodes">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<script>
+
+
+const animeEpisodes = {
+
+
+"One Piece":[
+
+"Épisode 1",
+"Épisode 2",
+"Épisode 3",
+"Épisode 4",
+"Épisode 5"
+
+],
+
+
+"Naruto":[
+
+"Épisode 1",
+"Épisode 2",
+"Épisode 3",
+"Épisode 4"
+
+],
+
+
+"Jujutsu Kaisen":[
+
+"Épisode 1",
+"Épisode 2",
+"Épisode 3"
+
+],
+
+
+"Dragon Ball":[
+
+"Épisode 1",
+"Épisode 2",
+"Épisode 3"
+
+],
+
+
+"Attack on Titan":[
+
+"Épisode 1",
+"Épisode 2",
+"Épisode 3"
+
+]
+
+
+};
+
+
+
+function ouvrirAnime(nom){
+
+
+document.getElementById("animeTitle").innerHTML =
+nom;
+
+
+
+let zone =
+document.getElementById("episodes");
+
+
+
+zone.innerHTML="";
+
+
+
+animeEpisodes[nom].forEach((episode,index)=>{
+
+
+zone.innerHTML += `
+
+
+<div class="card">
+
+
+<h3>${episode}</h3>
+
+
+
+<button class="watch"
+onclick="lireEpisode('${nom}',${index+1})">
+
+▶ Regarder
+
+</button>
+
+
+</div>
+
+
+`;
+
+
+});
+
+
+window.location="#player";
+
+
+}
+
+
+
+
+
+function lireEpisode(anime,numero){
+
+
+
+document.getElementById("videoSource").src =
+"videos/"+anime+"/episode"+numero+".mp4";
+
+
+
+let video =
+document.getElementById("videoPlayer");
+
+
+
+video.load();
+
+video.play();
+
+
+
+}
+
+
+
+</script><section id="profil">
+
+
+<h2 class="title">
+👤 Mon profil
+</h2>
+
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<h3>
+ENGOUANG FORTUNE
+</h3>
+
+
+<p>
+Utilisateur AnimeWorld
+</p>
+
+
+<button class="watch" onclick="ajouterFavori()">
+
+❤️ Ajouter One Piece aux favoris
+
+</button>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h3>
+❤️ Mes favoris
+</h3>
+
+
+<p id="favoris">
+
+Aucun animé ajouté
+
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h3>
+▶ Continuer à regarder
+</h3>
+
+
+<p id="historique">
+
+Aucun historique
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+
+© 2026 AnimeWorld
+
+
+<br><br>
+
+
+Créé par 
+<strong>
+ENGOUANG FORTUNE
+</strong>
+
+
+<br>
+
+
+Tous droits réservés.
+
+
+</footer>
+
+
+
+
+
+
+
+<script>
+
+
+let favoris = [];
+
+
+
+function ajouterFavori(){
+
+
+if(!favoris.includes("One Piece")){
+
+
+favoris.push("One Piece");
+
+
+document.getElementById("favoris").innerHTML =
+favoris.join("<br>");
+
+
+}
+
+
+}
+
+
+
+
+
+let historique = [];
+
+
+
+function sauvegarderAnime(nom){
+
+
+historique.push(nom);
+
+
+document.getElementById("historique").innerHTML =
+historique.join("<br>");
+
+
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html><style>
+
+
+/* ANIMATION LOGO */
+
+.logo{
+
+animation:logoAnim 2s infinite alternate;
+
+}
+
+
+
+@keyframes logoAnim{
+
+
+from{
+
+transform:scale(1);
+
+}
+
+
+to{
+
+transform:scale(1.1);
+
+}
+
+
+}
+
+
+
+
+
+/* BARRE DE RECHERCHE AMELIOREE */
+
+
+#searchAnime{
+
+display:block;
+
+margin:30px auto;
+
+}
+
+
+
+.hidden{
+
+display:none;
+
+}
+
+
+
+
+
+
+/* MENU MOBILE */
+
+
+.menu-btn{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.menu-btn{
+
+display:block;
+
+}
+
+
+nav{
+
+display:none;
+
+flex-direction:column;
+
+background:#000;
+
+width:100%;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+nav.active{
+
+display:flex;
+
+}
+
+
+}
+
+
+
+
+
+/* ANIMATION DES CARTES */
+
+
+.card{
+
+animation:apparition 0.8s;
+
+}
+
+
+
+@keyframes apparition{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+
+}
+
+
+
+
+</style>
+
+
+
+
+
+<script>
+
+
+/* RECHERCHE ANIME */
+
+
+function rechercher(){
+
+
+let recherche =
+
+document.getElementById("searchAnime")
+.value
+.toLowerCase();
+
+
+
+let cartes =
+
+document.querySelectorAll(".card");
+
+
+
+cartes.forEach(card=>{
+
+
+let texte =
+
+card.innerText.toLowerCase();
+
+
+
+if(texte.includes(recherche)){
+
+
+card.classList.remove("hidden");
+
+
+}
+
+else{
+
+
+card.classList.add("hidden");
+
+
+}
+
+
+});
+
+
+}
+
+
+
+
+
+
+/* MENU TELEPHONE */
+
+
+function ouvrirMenu(){
+
+
+document.querySelector("nav")
+.classList.toggle("active");
+
+
+}
+
+
+
+</script><div class="search-box">
+
+
+<input 
+id="searchAnime"
+onkeyup="rechercher()"
+placeholder="🔎 Rechercher un animé...">
+
+
+</div><div class="menu-btn" onclick="ouvrirMenu()">
+☰
+</div><section id="anime">
+
+<h2 class="title">🔥 Catalogue AnimeWorld</h2>
+
+<div class="container">
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/6/73245.jpg">
+<h3>One Piece</h3>
+<p>⭐ 9.0<br>Action • Aventure</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/13/17405.jpg">
+<h3>Naruto</h3>
+<p>⭐ 8.5<br>Ninja • Combat</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg">
+<h3>Jujutsu Kaisen</h3>
+<p>⭐ 8.9<br>Fantastique • Action</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/5/59411.jpg">
+<h3>Dragon Ball Z</h3>
+<p>⭐ 9.1<br>Combat • Aventure</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg">
+<h3>Attack on Titan</h3>
+<p>⭐ 9.0<br>Action • Drame</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg">
+<h3>Demon Slayer</h3>
+<p>⭐ 8.7<br>Action • Fantastique</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/4/19644.jpg">
+<h3>Bleach</h3>
+<p>⭐ 8.2<br>Combat • Shinigami</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg">
+<h3>Solo Leveling</h3>
+<p>⭐ 8.8<br>Action • Fantasy</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/1517/100633.jpg">
+<h3>My Hero Academia</h3>
+<p>⭐ 8.0<br>Super-héros • Action</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+
+<div class="card">
+<img src="https://cdn.myanimelist.net/images/anime/1170/124312.jpg">
+<h3>Chainsaw Man</h3>
+<p>⭐ 8.5<br>Action • Horreur</p>
+<button class="watch">Voir épisodes</button>
+</div>
+
+
+
+</div>
+
+</section>
