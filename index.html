@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabon Découverte - Par ENGOUANG FORTUNE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION MODERNE -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-area">
+        <div class="animated-logo">🇬🇦</div>
+        <div class="brand-text">
+          <h1>GABON DÉCOUVERTE 🌴</h1>
+          <p>By <span>ENGOUANG FORTUNE</span></p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#accueil" class="active">🏠 Accueil</a>
+        <a href="#histoire">📜 Histoire</a>
+        <a href="#animaux">🦁 Faune</a>
+        <a href="#politique">🏛️ Politique</a>
+        <a href="#ethnies">🎭 Ethnies</a>
+        <a href="#cuisine">🍲 Cuisine</a>
+        <a href="#provinces">🗺️ Provinces</a>
+        <a href="#tourisme">📸 Tourisme</a>
+        <a href="#quiz">🎯 Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNIÈRE ACCUEIL / HERO SECTION -->
+  <section id="accueil" class="hero">
+    <div class="hero-text">
+      <span class="badge-hero">✨ Bienvenue au Gabon ✨</span>
+      <h2>Explore le Cœur Vert de l'Afrique ! 🇬🇦</h2>
+      <p>Plonge dans l'histoire, la culture, les animaux sauvages et les plus beaux endroits du Gabon avec une expérience fun et colorée.</p>
+      
+      <!-- BARRE DE RECHERCHE INTELLIGENTE -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔎 Recherche une ville, un plat, un animal, un lieu..." onkeyup="rechercher()">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="main-content">
+    <h2 class="section-title">Tout savoir sur le Gabon 🔥</h2>
+
+    <div class="grid-categories" id="gridCategories">
+
+      <!-- 1. HISTOIRE -->
+      <article class="card" id="histoire" data-keywords="histoire passe independance pygmees bantous leon mba bongo 1960 libreville antique">
+        <div class="card-badge">📜 Patrimoine</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80" alt="Histoire du Gabon">
+        <div class="card-content">
+          <h3>Histoire & Origines du Pays</h3>
+          
+          <p>L'histoire du Gabon commence il y a des millénaires avec les <strong>Pygmées</strong>, les tout premiers habitants de la grande forêt équatoriale. Ils vivaient en parfaite harmonie avec la nature, maîtrisant la chasse et les plantes médicinales.</p>
+          
+          <p>Au fil du temps, les peuples Bantu sont arrivés, suivis des explorateurs européens. C'est en 1472 que les navigateurs portugais ont aperçu la côte et ont nommé la région <em>"Gabão"</em> (manteau à capuchon) en raison de la forme de l'Estuaire.</p>
+
+          <p>Après la colonisation, le Gabon a obtenu son <strong>indépendance le 17 août 1960</strong> avec Léon Mba comme tout premier président, marquant le début de l'histoire moderne du pays.</p>
+
+          <!-- PHOTOS EXPLICATIVES EN DESSOUS -->
+          <div class="sub-gallery">
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=400&q=80" alt="Tradition antique">
+              <span>Héritage Ancestral</span>
+            </div>
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=400&q=80" alt="Monument Gabon">
+              <span>Révolution Moderne</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. ANIMAUX ET FAUNE -->
+      <article class="card" id="animaux" data-keywords="animaux faune flore elephant gorille mandrill biodiversite loango ivindo nature jungle">
+        <div class="card-badge green-badge">🐘 Wild Nature</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=800&q=80" alt="Faune sauvage">
+        <div class="card-content">
+          <h3>Les Animaux & La Forêt</h3>
+          
+          <p>Le Gabon est surnommé le <strong>"Dernier Éden de la planète"</strong>. Pourquoi ? Parce que plus de 80% de son territoire est recouvert d'une jungle luxuriante et protégée !</p>
+          
+          <p>C'est le paradis des <strong>éléphants de forêt</strong>, des gorilles des plaines et des célèbres <strong>mandrills</strong> au visage multicolore. Tu peux aussi observer des baleines et même des hippopotames qui se baignent dans l'océan Atlantique !</p>
+
+          <div class="sub-gallery">
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=400&q=80" alt="Éléphant de forêt">
+              <span>Éléphants de Forêt</span>
+            </div>
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?auto=format&fit=crop&w=400&q=80" alt="Gorille des plaines">
+              <span>Gorilles Rares</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. POLITIQUE ET INSTITUTIONS -->
+      <article class="card" id="politique" data-keywords="politique president ministre gouverneur gouvernement etat libreville assemblee">
+        <div class="card-badge blue-badge">🏛️ Institutions</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80" alt="Gouvernement Gabon">
+        <div class="card-content">
+          <h3>Politique & Gouvernance</h3>
+          
+          <p>Le Gabon est une République basée à <strong>Libreville</strong>. La politique s'organise autour du Président de la République, du Premier Ministre et du gouvernement.</p>
+          
+          <p>Pour gérer le pays en toute efficacité, le territoire est découpé en 9 provinces. À la tête de chaque province se trouve un <strong>Gouverneur</strong>, entouré de préfets et de maires dans chaque ville.</p>
+
+          <div class="sub-gallery">
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=400&q=80" alt="Palais institution">
+              <span>Siège de l'État</span>
+            </div>
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=400&q=80" alt="Drapeau Gabon">
+              <span>Symboles Nationaux</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. ETHNIES ET CULTURE -->
+      <article class="card" id="ethnies" data-keywords="ethnies culture fang punu myene kota nzebi bwiti masque tradition danse art">
+        <div class="card-badge yellow-badge">🎭 Culture & Rites</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80" alt="Art et masques">
+        <div class="card-content">
+          <h3>Ethnies, Masques & Traditions</h3>
+          
+          <p>Le Gabon est une vraie mosaïque culturelle composée de plus de <strong>50 ethnies</strong> (Fangs, Punu, Myènè, Nzebi, Kota, Teke...) qui vivent dans l'union et le respect des traditions.</p>
+          
+          <p>L'art gabonais est célèbre dans le monde entier grâce à ses magnifiques <strong>masques rituels</strong> sculptés en bois (comme le masque blanc Punu) et la cérémonie sacrée du <strong>Bwiti</strong>.</p>
+
+          <div class="sub-gallery">
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=400&q=80" alt="Masque Punu">
+              <span>Masque Punu Ancestral</span>
+            </div>
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=400&q=80" alt="Danses traditionnelles">
+              <span>Danses & Rites</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. CUISINE ET PLATS -->
+      <article class="card" id="cuisine" data-keywords="cuisine plats ingredients nyembwe odika manioc poisson banane feugile poulet">
+        <div class="card-badge red-badge">🍲 Yummy / Miam</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Plats du Gabon">
+        <div class="card-content">
+          <h3>Plats Délicieux & Recettes</h3>
+          
+          <p>La nourriture gabonaise est gourmande et épicée ! On y cuisine le poisson frais de l'océan, la viande fumée et les bons produits du village.</p>
+          
+          <p>Le plat star est le <strong>Poulet Nyembwe</strong> (sauce à base de noix de palme). On raffole aussi de la <strong>Sauce Odika</strong> (chocolat indigène faits avec des graines de mangue sauvage) servi avec du bâton de manioc ou des bananes plantains.</p>
+
+          <div class="sub-gallery">
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80" alt="Poulet Nyembwe">
+              <span>Poulet Nyembwe</span>
+            </div>
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=400&q=80" alt="Poisson Fumé">
+              <span>Poisson Fumé & Manioc</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. PROVINCES ET VILLES -->
+      <article class="card" id="provinces" data-keywords="provinces villes estuaire libreville oyem franceville port gentil lambarene mouila tchibanga makokou koulamoutou">
+        <div class="card-badge purple-badge">🗺️ Carte & Villes</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Villes du Gabon">
+        <div class="card-content">
+          <h3>Les 9 Provinces & Leurs Villes</h3>
+          
+          <p>Chaque province du Gabon a son propre caractère ! Voici les villes incontournables à connaître :</p>
+          
+          <p>📍 <strong>Estuaire</strong> (Libreville - la Capitale)<br>
+          📍 <strong>Ogooué-Maritime</strong> (Port-Gentil - Capitale Pétrolière)<br>
+          📍 <strong>Haut-Ogooué</strong> (Franceville)<br>
+          📍 <strong>Moyen-Ogooué</strong> (Lambaréné)<br>
+          📍 <strong>Woleu-Ntem</strong> (Oyem)</p>
+
+          <div class="sub-gallery">
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80" alt="Libreville">
+              <span>Libreville Moderne</span>
+            </div>
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Port Gentil Coast">
+              <span>Port-Gentil Littoral</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. TOURISME ET LIEUX VISITÉS -->
+      <article class="card" id="tourisme" data-keywords="tourisme lieux visite loango ivindo lambarene plages mayumba lope safari pointe denis kongou">
+        <div class="card-badge orange-badge">📸 Best Spots</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Plage du Gabon">
+        <div class="card-content">
+          <h3>Lieux Touristiques Préférés des Visiteurs</h3>
+          
+          <p>Voici les endroits magiques visités par les touristes du monde entier :</p>
+          
+          <p>🏖️ <strong>La Pointe-Denis :</strong> La plage paradisiaque en face de Libreville avec sable blanc et cocotiers.<br>
+          🌊 <strong>Chutes de Kongou (Ivindo) :</strong> L'une des plus belles cascades d'Afrique.<br>
+          🐘 <strong>Parc de Loango :</strong> L'unique endroit au monde où les éléphants se baladent sur la plage.</p>
+
+          <div class="sub-gallery">
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?auto=format&fit=crop&w=400&q=80" alt="Plage Pointe Denis">
+              <span>Pointe-Denis</span>
+            </div>
+            <div class="photo-item">
+              <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=400&q=80" alt="Chutes de Kongou">
+              <span>Chutes d'Ivindo</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. QUIZ -->
+      <article class="card" id="quiz" data-keywords="quiz jeu test questions histoire gabon apprendre">
+        <div class="card-badge yellow-badge">🎯 Game Time</div>
+        <img class="main-card-img" src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=800&q=80" alt="Quiz Gabon">
+        <div class="card-content">
+          <h3>Fais le Test ! 🔥</h3>
+          
+          <p>Penses-tu connaître le Gabon sur le bout des doigts ? Réponds à cette question :</p>
+          
+          <div class="quiz-box">
+            <p><strong>Quel est le légendaire plat gabonais fait à base de sauce graine de palme ?</strong></p>
+            <button class="quiz-btn" onclick="verifierReponse(this, false)">A) Le Maboké</button>
+            <button class="quiz-btn" onclick="verifierReponse(this, true)">B) Le Poulet Nyembwe 🍗</button>
+            <button class="quiz-btn" onclick="verifierReponse(this, false)">C) L'Atchéké</button>
+            <p class="quiz-result"></p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FOOTER COOL -->
+  <footer class="footer">
+    <p>🚀 Conçu avec passion par <strong>ENGOUANG FORTUNE</strong> | Gabon Découverte 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>/* DESIGN POP, COLORÉ ET JEUNE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* NAVIGATION DYNAMIQUE */
+.header {
+  background-color: #ffffff;
+  border-bottom: 4px solid #fcd116;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.animated-logo {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 0 0 3px #009e49, 0 0 0 6px #fcd116, 0 0 0 9px #3a75c4;
+  animation: tourner 6s infinite linear;
+}
+
+@keyframes tourner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.brand-text h1 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.brand-text p {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.brand-text span {
+  color: #009e49;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #334155;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  background-color: #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+  background-color: #009e49;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* HERO BANNER JEUNE */
+.hero {
+  background: linear-gradient(135deg, rgba(0, 158, 73, 0.85), rgba(58, 117, 196, 0.85)), url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80') center/cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero-text {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.badge-hero {
+  background-color: #fcd116;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border: 3px solid #fcd116;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* GRILLE DE CARTES INTERACTIVES */
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 35px;
+  color: #0f172a;
+}
+
+.grid-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+/* CARD DESIGN */
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.card-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #009e49;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 15px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.green-badge { background-color: #10b981; }
+.blue-badge { background-color: #3b82f6; }
+.yellow-badge { background-color: #eab308; color: black; }
+.red-badge { background-color: #ef4444; }
+.purple-badge { background-color: #a855f7; }
+.orange-badge { background-color: #f97316; }
+
+.main-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.35rem;
+  color: #0f172a;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.card-content p {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* SUB GALLERY (MINI PHOTOS SUPPLÉMENTAIRES) */
+.sub-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 2px dashed #e2e8f0;
+}
+
+.photo-item {
+  flex: 1;
+  text-align: center;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.photo-item img:hover {
+  transform: scale(1.05);
+}
+
+.photo-item span {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* QUIZ */
+.quiz-box {
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #e2e8f0;
+}
+
+.quiz-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 2px solid #cbd5e1;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quiz-btn:hover {
+  background-color: #fcd116;
+  border-color: #fcd116;
+}
+
+.quiz-result {
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background-color: #0f172a;
+  color: white;
+  padding: 25px;
+  margin-top: 50px;
+  border-radius: 30px 30px 0 0;
+}
+
+.footer strong {
+  color: #fcd116;
+}
+
+// RECHERCHE EN DIRECT SUR LES CARTES
+function rechercher() {
+  let input = document.getElementById('searchInput');
+  let filtre = input.value.toLowerCase().trim();
+  let cartes = document.querySelectorAll('.card');
+
+  cartes.forEach(function(carte) {
+    let titre = carte.querySelector('h3').textContent.toLowerCase();
+    let motsCles = carte.getAttribute('data-keywords') ? carte.getAttribute('data-keywords').toLowerCase() : '';
+    let texte = carte.textContent.toLowerCase();
+
+    if (titre.includes(filtre) || motsCles.includes(filtre) || texte.includes(filtre)) {
+      carte.style.display = "flex";
+    } else {
+      carte.style.display = "none";
+    }
+  });
+}
+
+// LOGIQUE INTERACTIVE DU QUIZ
+function verifierReponse(bouton, estCorrecte) {
+  let resultatText = bouton.parentElement.querySelector('.quiz-result');
+  
+  if (estCorrecte) {
+    resultatText.style.color = "#009e49";
+    resultatText.textContent = "🎉 Bravo champion ! Le Poulet Nyembwe est la star de la cuisine gabonaise !";
+  } else {
+    resultatText.style.color = "#ef4444";
+    resultatText.textContent = "❌ Dommage ! Réessaie encore !";
+  }
+}
