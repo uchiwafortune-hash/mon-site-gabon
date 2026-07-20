@@ -2159,3 +2159,186 @@ Découvrir l'histoire, la culture, la nature et les richesses du Gabon.
 
 </footer>
 </style>
+<style>
+
+/* ===== CORRECTION GENERALE ===== */
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+width:100%;
+overflow-x:hidden;
+}
+
+
+/* Toutes les sections gardent la même largeur */
+
+section,
+main{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:30px 20px;
+}
+
+
+/* Articles uniformes */
+
+.article,
+.carte,
+.province,
+.video-card,
+.photo{
+
+width:100%;
+box-sizing:border-box;
+
+}
+
+
+/* Images propres */
+
+img{
+
+max-width:100%;
+height:auto;
+
+}
+
+
+/* Recherche */
+
+.search-box{
+
+width:100%;
+padding:20px;
+text-align:center;
+background:white;
+
+}
+
+
+.search-box input{
+
+width:90%;
+max-width:700px;
+padding:15px;
+border-radius:30px;
+border:2px solid #006b3f;
+font-size:16px;
+
+}
+
+
+/* Boutons */
+
+button{
+
+cursor:pointer;
+transition:0.3s;
+
+}
+
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* Téléphone */
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+
+.article{
+
+padding:15px;
+
+}
+
+}
+<script>
+
+/* ===== RECHERCHE DU SITE ===== */
+
+let recherche = document.getElementById("searchInput");
+
+
+if(recherche){
+
+recherche.addEventListener("input",function(){
+
+let mot = recherche.value.toLowerCase();
+
+let blocs=document.querySelectorAll("section");
+
+
+blocs.forEach(function(bloc){
+
+let contenu=bloc.innerText.toLowerCase();
+
+
+if(contenu.includes(mot) || mot==""){
+
+bloc.style.display="block";
+
+}else{
+
+bloc.style.display="none";
+
+}
+
+
+});
+
+
+});
+
+}
+
+
+
+/* ===== BOUTONS ARTICLES ===== */
+
+let boutons=document.querySelectorAll("button");
+
+
+boutons.forEach(function(bouton){
+
+
+bouton.addEventListener("click",function(){
+
+
+let section=this.closest("section");
+
+
+if(section){
+
+section.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+
+});
+
+
+});
+
+
+</script>
+</style>
