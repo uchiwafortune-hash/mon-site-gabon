@@ -1,0 +1,3043 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>
+Gabon Découverte - Histoire, Culture, Nature et Tourisme
+</title>
+
+<meta 
+name="description"
+content="Découvrez le Gabon : son histoire, ses peuples, ses forêts, ses animaux, sa culture et ses paysages."
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link 
+href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;700&display=swap"
+rel="stylesheet"
+/>
+
+</head>
+
+
+<body>
+
+<div id="root"></div>
+
+<script type="module" src="/src/main.tsx"></script>
+
+</body>
+
+</html>import type { Config } from "tailwindcss";
+
+
+export default {
+
+content:[
+"./index.html",
+"./src/**/*.{js,ts,jsx,tsx}"
+],
+
+
+theme:{
+
+extend:{
+
+
+colors:{
+
+
+gabon:{
+green:"#009E49",
+yellow:"#FCD116",
+blue:"#3A75C4",
+dark:"#063B1C"
+}
+
+},
+
+
+fontFamily:{
+
+sans:[
+"Inter",
+"sans-serif"
+],
+
+title:[
+"Playfair Display",
+"serif"
+]
+
+}
+
+
+}
+
+},
+
+
+plugins:[],
+
+
+} satisfies Config;@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+
+margin:0;
+
+font-family:"Inter",sans-serif;
+
+background:#fafafa;
+
+}
+
+
+h1,h2,h3{
+
+font-family:"Playfair Display",serif;
+
+}
+
+
+html{
+
+scroll-behavior:smooth;
+
+}import React from "react";
+
+import ReactDOM from "react-dom/client";
+
+import "./index.css";
+
+import App from "./App";
+
+
+ReactDOM
+.createRoot(
+document.getElementById("root")!
+)
+.render(
+
+<React.StrictMode>
+
+<App/>
+
+</React.StrictMode>
+
+);import {BrowserRouter} from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+
+import Router from "./router";
+
+
+function App(){
+
+
+return(
+
+<BrowserRouter>
+
+
+<Navbar/>
+
+
+<Router/>
+
+
+</BrowserRouter>
+
+)
+
+}
+
+
+export default App;import {Routes,Route} from "react-router-dom";
+
+
+import Home from "../pages/Home";
+import Histoire from "../pages/Histoire";
+import Culture from "../pages/Culture";
+import Tourisme from "../pages/Tourisme";
+import Animaux from "../pages/Animaux";
+import Gastronomie from "../pages/Gastronomie";
+import Quiz from "../pages/Quiz";
+import Carte from "../pages/Carte";
+
+
+
+export default function Router(){
+
+
+return(
+
+<Routes>
+
+
+<Route path="/" element={<Home/>}/>
+
+<Route path="/histoire" element={<Histoire/>}/>
+
+<Route path="/culture" element={<Culture/>}/>
+
+<Route path="/tourisme" element={<Tourisme/>}/>
+
+<Route path="/animaux" element={<Animaux/>}/>
+
+<Route path="/gastronomie" element={<Gastronomie/>}/>
+
+<Route path="/quiz" element={<Quiz/>}/>
+
+<Route path="/carte" element={<Carte/>}/>
+
+
+</Routes>
+
+)
+import {Link} from "react-router-dom";
+
+
+export default function Navbar(){
+
+
+const menu=[
+
+["Accueil","/"],
+["Histoire","/histoire"],
+["Culture","/culture"],
+["Tourisme","/tourisme"],
+["Animaux","/animaux"],
+["Gastronomie","/gastronomie"],
+["Quiz","/quiz"],
+["Carte","/carte"]
+
+];
+
+
+return(
+
+<nav className="
+fixed
+top-0
+w-full
+z-50
+bg-white/90
+backdrop-blur
+shadow
+">
+
+
+<div className="
+max-w-7xl
+mx-auto
+flex
+justify-between
+items-center
+p-4
+">
+
+
+<Link
+to="/"
+className="
+text-2xl
+font-bold
+text-gabon-green
+font-title
+"
+>
+
+🇬🇦 Gabon Découverte
+
+</Link>
+
+
+
+<div className="
+hidden
+md:flex
+gap-5
+">
+
+
+{
+
+menu.map((item)=>(
+
+
+<Link
+
+key={item[1]}
+
+to={item[1]}
+
+className="
+hover:text-gabon-green
+transition
+font-medium
+"
+
+>
+
+{item[0]}
+
+</Link>
+
+
+))
+
+}
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+)
+
+}
+}export default function Home(){
+
+return(
+
+<div className="pt-24 text-center">
+
+<h1 className="
+text-5xl
+font-bold
+text-gabon-green
+">
+
+Bienvenue au Gabon 🇬🇦
+
+</h1>
+
+
+<p className="mt-5 text-xl">
+
+Découvrez l'histoire, la culture et les merveilles du Gabon.
+
+</p>
+
+
+</div>
+
+)
+
+}export default function Page(){
+
+return(
+
+<div className="pt-24 text-center">
+
+<h1 className="text-4xl">
+Page en construction
+</h1>
+
+</div>
+
+)
+
+}import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import DiscoveryCards from "./components/DiscoveryCards";
+
+
+export default function Home(){
+
+return(
+
+<main>
+
+<Hero/>
+
+<Stats/>
+
+<DiscoveryCards/>
+
+</main>
+
+)
+
+}import {motion} from "framer-motion";
+
+
+export default function Hero(){
+
+
+return(
+
+<section
+className="
+relative
+h-screen
+flex
+items-center
+justify-center
+text-white
+"
+>
+
+
+<img
+
+src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"
+
+className="
+absolute
+inset-0
+w-full
+h-full
+object-cover
+"
+/>
+
+
+
+<div
+className="
+absolute
+inset-0
+bg-black/50
+"
+/>
+
+
+
+<motion.div
+
+initial={{
+opacity:0,
+y:50
+}}
+
+animate={{
+opacity:1,
+y:0
+}}
+
+transition={{
+duration:1
+}}
+
+className="
+relative
+text-center
+px-5
+"
+
+>
+
+
+<h1
+
+className="
+text-5xl
+md:text-7xl
+font-title
+font-bold
+"
+
+>
+
+Découvrez le Gabon
+
+</h1>
+
+
+
+<p
+
+className="
+mt-6
+text-xl
+max-w-2xl
+mx-auto
+"
+
+>
+
+Terre de forêts, de traditions,
+de cultures et de paysages exceptionnels.
+
+</p>
+
+
+
+<div className="
+mt-8
+flex
+justify-center
+gap-4
+">
+
+
+<a
+
+href="/tourisme"
+
+className="
+bg-gabon-green
+px-8
+py-3
+rounded-full
+font-bold
+hover:scale-105
+transition
+"
+
+>
+
+Explorer le Gabon
+
+</a>
+
+
+<a
+
+href="/carte"
+
+className="
+bg-gabon-yellow
+text-black
+px-8
+py-3
+rounded-full
+font-bold
+hover:scale-105
+transition
+"
+
+>
+
+Voir la carte
+
+</a>
+
+
+</div>
+
+
+</motion.div>
+
+
+</section>
+
+
+)
+const stats=[
+
+{
+number:"9",
+text:"Provinces"
+},
+
+{
+number:"13",
+text:"Parcs nationaux"
+},
+
+{
+number:"80%",
+text:"Forêts tropicales"
+},
+
+{
+number:"40+",
+text:"Ethnies"
+}
+
+
+];
+
+
+export default function Stats(){
+
+
+return(
+
+<section className="
+py-16
+bg-gabon-dark
+text-white
+">
+
+
+<div className="
+max-w-6xl
+mx-auto
+grid
+grid-cols-2
+md:grid-cols-4
+gap-8
+text-center
+">
+
+
+{
+
+stats.map((stat)=>(
+
+
+<div key={stat.text}>
+
+
+<h2 className="
+text-5xl
+font-bold
+text-gabon-yellow
+">
+
+{stat.number}
+
+</h2>
+
+
+<p className="
+mt-2
+">
+
+{stat.text}
+
+</p>
+
+
+</div>
+
+
+))
+
+}
+
+
+</div>
+
+
+</section>
+
+
+)
+
+}
+}const cards=[
+
+
+{
+title:"Histoire",
+img:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+link:"/histoire"
+},
+
+
+{
+title:"Culture",
+img:"https://images.unsplash.com/photo-1523805009345-7448845a9e53",
+link:"/culture"
+},
+
+
+{
+title:"Animaux",
+img:"https://images.unsplash.com/photo-1546182990-dffeafbe841d",
+link:"/animaux"
+},
+
+
+{
+title:"Tourisme",
+img:"https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+link:"/tourisme"
+}
+
+
+
+];
+
+
+export default function DiscoveryCards(){
+
+
+return(
+
+<section className="
+py-20
+px-5
+">
+
+
+<h2 className="
+text-4xl
+text-center
+font-title
+font-bold
+mb-12
+">
+
+Explorez le Gabon
+
+</h2>
+
+
+
+<div className="
+max-w-6xl
+mx-auto
+grid
+md:grid-cols-4
+gap-8
+">
+
+
+{
+
+cards.map(card=>(
+
+
+<a
+
+href={card.link}
+
+key={card.title}
+
+className="
+group
+rounded-xl
+overflow-hidden
+shadow-lg
+"
+
+>
+
+
+<img
+
+src={card.img}
+
+className="
+h-64
+w-full
+object-cover
+group-hover:scale-110
+transition
+"
+
+/>
+
+
+
+<div className="
+p-5
+bg-white
+"
+
+>
+
+<h3 className="
+text-2xl
+font-bold
+text-gabon-green
+">
+
+{card.title}
+
+</h3>
+
+
+</div>
+
+
+</a>
+
+
+))
+
+
+}
+
+
+</div>
+
+
+</section>
+
+
+)
+
+}import Home from "../pages/home/Home";const sections = [
+
+{
+title:"Les origines du Gabon",
+text:
+"Le territoire gabonais est habité depuis des milliers d'années par différents peuples. Les premières populations vivaient principalement de chasse, de pêche et de cueillette.",
+image:
+"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"
+},
+
+{
+title:"La période précoloniale",
+text:
+"Avant l'arrivée des Européens, plusieurs royaumes et communautés organisaient la vie sociale autour des traditions, du commerce et des chefs coutumiers.",
+image:
+"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+},
+
+{
+title:"La colonisation",
+text:
+"Au XIXe siècle, le Gabon devient progressivement un territoire sous influence française. Libreville est fondée en 1849.",
+image:
+"https://images.unsplash.com/photo-1494526585095-c41746248156"
+},
+
+{
+title:"L'indépendance",
+text:
+"Le Gabon obtient son indépendance le 17 août 1960 et devient une République.",
+image:
+"https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1"
+}
+
+];
+
+
+export default function Histoire(){
+
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+h-[60vh]
+relative
+flex
+items-center
+justify-center
+text-white
+">
+
+
+<img
+src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"
+className="
+absolute
+w-full
+h-full
+object-cover
+"
+/>
+
+
+<div className="
+absolute
+inset-0
+bg-black/50
+"/>
+
+
+<h1 className="
+relative
+text-6xl
+font-title
+font-bold
+">
+
+Histoire du Gabon
+
+</h1>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+space-y-16
+">
+
+
+{
+
+sections.map((item,index)=>(
+
+
+<div
+
+key={item.title}
+
+className="
+grid
+md:grid-cols-2
+gap-10
+items-center
+"
+
+
+>
+
+
+<img
+
+src={item.image}
+
+className="
+rounded-xl
+shadow-lg
+h-80
+w-full
+object-cover
+"
+
+
+/>
+
+
+<div>
+
+<h2 className="
+text-3xl
+font-bold
+text-gabon-green
+mb-4
+">
+
+{item.title}
+
+</h2>
+
+
+<p className="
+text-lg
+leading-8
+">
+
+{item.text}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+))
+
+}
+
+
+</section>
+
+
+</main>
+
+)
+
+}const cultures=[
+
+{
+title:"Les traditions",
+text:
+"Les traditions gabonaises occupent une place importante dans la société. Elles comprennent les cérémonies, les danses et les pratiques spirituelles.",
+image:
+"https://images.unsplash.com/photo-1523805009345-7448845a9e53"
+},
+
+
+{
+title:"Les peuples du Gabon",
+text:
+"Le Gabon possède une grande diversité culturelle avec des peuples comme les Fang, Punu, Myènè, Nzebi, Kota et bien d'autres.",
+image:
+"https://images.unsplash.com/photo-1531058020387-3be344556be6"
+},
+
+
+{
+title:"L'art gabonais",
+text:
+"Les masques, sculptures et objets traditionnels gabonais sont connus dans le monde entier pour leur beauté et leur symbolisme.",
+image:
+"https://images.unsplash.com/photo-1564399579883-451a5d44ec08"
+}
+
+
+];
+
+
+export default function Culture(){
+
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+bg-gabon-dark
+text-white
+py-24
+text-center
+">
+
+
+<h1 className="
+text-6xl
+font-title
+font-bold
+">
+
+Culture Gabonaise
+
+</h1>
+
+
+<p className="
+mt-5
+text-xl
+">
+
+Une richesse de peuples, traditions et créations
+
+</p>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+grid
+md:grid-cols-3
+gap-8
+">
+
+
+{
+
+cultures.map(item=>(
+
+
+<div
+
+key={item.title}
+
+className="
+rounded-xl
+shadow-lg
+overflow-hidden
+bg-white
+"
+
+
+>
+
+
+<img
+
+src={item.image}
+
+className="
+h-64
+w-full
+object-cover
+"
+
+/>
+
+
+
+<div className="p-6">
+
+
+<h2 className="
+text-2xl
+font-bold
+text-gabon-green
+">
+
+{item.title}
+
+</h2>
+
+
+<p className="
+mt-4
+leading-7
+">
+
+{item.text}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+))
+
+
+}
+
+
+</section>
+
+
+</main>
+
+)
+import Histoire from "../pages/histoire/Histoire";
+import Culture from "../pages/culture/Culture";
+}const peuples = [
+
+{
+nom:"Fang",
+description:
+"Les Fang représentent l'un des groupes culturels majeurs du Gabon. Ils sont connus pour leurs traditions, leur art et leur langue fang.",
+image:
+"https://images.unsplash.com/photo-1529156069898-49953e39b3ac"
+},
+
+{
+nom:"Punu",
+description:
+"Les Punu sont particulièrement connus pour leurs masques blancs traditionnels, leur danse et leurs cérémonies culturelles.",
+image:
+"https://images.unsplash.com/photo-1564399579883-451a5d44ec08"
+},
+
+{
+nom:"Myènè",
+description:
+"Installés principalement dans les zones côtières, les Myènè possèdent une riche tradition maritime.",
+image:
+"https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+},
+
+{
+nom:"Nzebi",
+description:
+"Les Nzebi sont connus pour leurs chants, leurs danses et leurs pratiques agricoles traditionnelles.",
+image:
+"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"
+},
+
+{
+nom:"Kota",
+description:
+"Les Kota sont célèbres pour leur art du métal et leurs sculptures traditionnelles.",
+image:
+"https://images.unsplash.com/photo-1561214115-f2f134cc4912"
+}
+
+];
+
+
+export default function Ethnies(){
+
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+bg-gabon-green
+text-white
+py-24
+text-center
+">
+
+
+<h1 className="
+text-6xl
+font-title
+font-bold
+">
+
+Les peuples du Gabon
+
+</h1>
+
+
+<p className="mt-5 text-xl">
+
+Une diversité culturelle exceptionnelle
+
+</p>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+grid
+md:grid-cols-3
+gap-8
+">
+
+
+{
+
+peuples.map(peuple=>(
+
+
+<article
+
+key={peuple.nom}
+
+className="
+rounded-xl
+overflow-hidden
+shadow-lg
+bg-white
+"
+
+>
+
+
+<img
+
+src={peuple.image}
+
+className="
+h-64
+w-full
+object-cover
+"
+
+/>
+
+
+<div className="p-6">
+
+
+<h2 className="
+text-3xl
+font-bold
+text-gabon-green
+">
+
+{peuple.nom}
+
+</h2>
+
+
+<p className="
+mt-4
+leading-7
+">
+
+{peuple.description}
+
+</p>
+
+
+</div>
+
+
+</article>
+
+
+))
+
+}
+
+
+</section>
+
+
+</main>
+
+)
+
+}const styles=[
+
+
+{
+titre:"Mvet",
+texte:
+"Le Mvet est un art musical traditionnel fang combinant musique, poésie et récit historique.",
+image:
+"https://images.unsplash.com/photo-1516280440614-37939bbacd81"
+},
+
+
+{
+titre:"Bwiti",
+texte:
+"Le Bwiti est accompagné de chants, de rythmes et d'instruments traditionnels dans certaines cérémonies.",
+image:
+"https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b"
+},
+
+
+{
+titre:"Musique moderne gabonaise",
+texte:
+"Le Gabon possède une scène musicale moderne avec des artistes utilisant l'afrobeat, le hip-hop et la musique africaine contemporaine.",
+image:
+"https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+}
+
+
+];
+
+
+
+export default function Musique(){
+
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+bg-black
+text-white
+py-24
+text-center
+">
+
+
+<h1 className="
+text-6xl
+font-title
+font-bold
+">
+
+Musique du Gabon
+
+</h1>
+
+
+<p className="mt-5 text-xl">
+
+Les sons et rythmes d'une nation
+
+</p>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+grid
+md:grid-cols-3
+gap-10
+">
+
+
+{
+
+styles.map(style=>(
+
+
+<div
+
+key={style.titre}
+
+className="
+shadow-xl
+rounded-xl
+overflow-hidden
+bg-white
+"
+
+
+>
+
+
+<img
+
+src={style.image}
+
+className="
+h-60
+w-full
+object-cover
+"
+
+/>
+
+
+<div className="p-6">
+
+
+<h2 className="
+text-3xl
+font-bold
+text-gabon-green
+">
+
+{style.titre}
+
+</h2>
+
+
+<p className="
+mt-4
+">
+
+{style.texte}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+))
+
+}
+
+
+</section>
+
+
+</main>
+
+)
+
+}import Ethnies from "../pages/ethnies/Ethnies";
+import Musique from "../pages/musique/Musique";
+  <Route path="/ethnies" element={<Ethnies/>}/>
+
+<Route path="/musique" element={<Musique/>}/>
+  ["Ethnies","/ethnies"],
+["Musique","/musique"],
+  const forets = [
+
+{
+titre:"La forêt équatoriale",
+texte:
+"Le Gabon possède l'une des plus grandes zones de forêt tropicale intacte d'Afrique. Elle couvre une grande partie du territoire.",
+image:
+"https://images.unsplash.com/photo-1511497584788-876760111969"
+},
+
+{
+titre:"Parc national de l'Ivindo",
+texte:
+"Situé à l'est du Gabon, le parc de l'Ivindo est célèbre pour ses cascades, ses rivières et sa biodiversité exceptionnelle.",
+image:
+"https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+},
+
+{
+titre:"Parc national de Loango",
+texte:
+"Loango est connu comme le lieu où la forêt rencontre l'océan, avec des paysages uniques et une faune remarquable.",
+image:
+"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"
+}
+
+];
+
+
+export default function Forets(){
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+bg-gabon-dark
+text-white
+py-24
+text-center
+">
+
+<h1 className="
+text-6xl
+font-title
+font-bold
+">
+
+Les forêts du Gabon
+
+</h1>
+
+
+<p className="mt-5 text-xl">
+
+Le cœur vert de l'Afrique
+
+</p>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+grid
+md:grid-cols-3
+gap-8
+">
+
+
+{
+
+forets.map(foret=>(
+
+
+<div
+
+key={foret.titre}
+
+className="
+rounded-xl
+overflow-hidden
+shadow-xl
+bg-white
+"
+
+>
+
+
+<img
+
+src={foret.image}
+
+className="
+h-64
+w-full
+object-cover
+"
+
+/>
+
+
+<div className="p-6">
+
+<h2 className="
+text-2xl
+font-bold
+text-gabon-green
+">
+
+{foret.titre}
+
+</h2>
+
+
+<p className="mt-4">
+
+{foret.texte}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+))
+
+}
+
+
+</section>
+
+
+</main>
+
+)const animaux=[
+
+{
+nom:"Gorille des plaines",
+info:
+"Le Gabon abrite une importante population de gorilles vivant dans les forêts tropicales.",
+image:
+"https://images.unsplash.com/photo-1549366021-9f761d450615"
+},
+
+
+{
+nom:"Éléphant de forêt",
+info:
+"L'éléphant de forêt est un symbole de la biodiversité gabonaise.",
+image:
+"https://images.unsplash.com/photo-1557050543-4d5f4e07ef46"
+},
+
+
+{
+nom:"Panthère",
+info:
+"Ce grand félin discret vit dans les zones forestières du Gabon.",
+image:
+"https://images.unsplash.com/photo-1549366021-9f761d450615"
+},
+
+
+{
+nom:"Tortue luth",
+info:
+"Les plages gabonaises accueillent les tortues luth venues pondre.",
+image:
+"https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+}
+
+];
+
+
+export default function Animaux(){
+
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+bg-green-900
+text-white
+py-24
+text-center
+">
+
+
+<h1 className="
+text-6xl
+font-title
+font-bold
+">
+
+Animaux du Gabon
+
+</h1>
+
+
+<p className="mt-5 text-xl">
+
+Une faune exceptionnelle à protéger
+
+</p>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+grid
+md:grid-cols-4
+gap-8
+">
+
+
+{
+
+animaux.map(animal=>(
+
+
+<div
+
+key={animal.nom}
+
+className="
+shadow-lg
+rounded-xl
+overflow-hidden
+bg-white
+"
+
+
+>
+
+
+<img
+
+src={animal.image}
+
+className="
+h-56
+w-full
+object-cover
+"
+
+/>
+
+
+
+<div className="p-5">
+
+
+<h2 className="
+text-2xl
+font-bold
+text-gabon-green
+">
+
+{animal.nom}
+
+</h2>
+
+
+<p className="mt-3">
+
+{animal.info}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+))
+
+}
+
+
+</section>
+
+
+</main>
+
+)
+
+}
+
+}import Forets from "../pages/forets/Forets";
+import Animaux from "../pages/animaux/Animaux";
+  <Route 
+path="/forets" 
+element={<Forets/>}
+/>
+
+
+<Route 
+path="/animaux" 
+element={<Animaux/>}
+/>["Forêts","/forets"],
+
+["Animaux","/animaux"],
+  const lieux = [
+
+{
+nom:"Parc national de Loango",
+description:
+"Un lieu exceptionnel où la forêt tropicale rencontre l'océan. On peut y observer éléphants, buffles et animaux marins.",
+image:
+"https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+},
+
+{
+nom:"Libreville",
+description:
+"La capitale du Gabon mélange modernité, histoire, marchés, plages et monuments importants.",
+image:
+"https://images.unsplash.com/photo-1496568816309-51d7c20e3b21"
+},
+
+{
+nom:"Les cascades de Kongou",
+description:
+"Situées dans le parc national de l'Ivindo, elles font partie des plus beaux paysages naturels du Gabon.",
+image:
+"https://images.unsplash.com/photo-1433086966358-54859d0ed716"
+},
+
+{
+nom:"Pointe Denis",
+description:
+"Une destination balnéaire proche de Libreville connue pour ses plages et ses paysages tranquilles.",
+image:
+"https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+}
+
+];
+
+
+export default function Tourisme(){
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+bg-gabon-blue
+text-white
+py-24
+text-center
+">
+
+
+<h1 className="
+text-6xl
+font-title
+font-bold
+">
+
+Découvrir le Gabon
+
+</h1>
+
+
+<p className="
+mt-5
+text-xl
+">
+
+Les plus beaux lieux touristiques du pays
+
+</p>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+grid
+md:grid-cols-2
+gap-10
+">
+
+
+{
+
+lieux.map(lieu=>(
+
+
+<div
+
+key={lieu.nom}
+
+className="
+bg-white
+rounded-xl
+overflow-hidden
+shadow-xl
+"
+
+
+>
+
+
+<img
+
+src={lieu.image}
+
+className="
+w-full
+h-72
+object-cover
+"
+
+/>
+
+
+<div className="p-6">
+
+
+<h2 className="
+text-3xl
+font-bold
+text-gabon-green
+">
+
+{lieu.nom}
+
+</h2>
+
+
+<p className="mt-4">
+
+{lieu.description}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+))
+
+}
+
+
+</section>
+
+
+</main>
+
+)
+
+}const plats=[
+
+
+{
+nom:"Poulet Nyembwe",
+description:
+"Plat emblématique du Gabon préparé avec une sauce à base de noix de palme.",
+image:
+"https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+},
+
+
+{
+nom:"Maboké",
+description:
+"Poisson ou viande cuisiné dans des feuilles avec des épices traditionnelles.",
+image:
+"https://images.unsplash.com/photo-1547592180-85f173990554"
+},
+
+
+{
+nom:"Feuilles de manioc",
+description:
+"Un accompagnement traditionnel préparé avec des feuilles de manioc pilées.",
+image:
+"https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+},
+
+
+{
+nom:"Brochettes gabonaises",
+description:
+"Des grillades très appréciées lors des repas et événements.",
+image:
+"https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba"
+}
+
+
+];
+
+
+export default function Gastronomie(){
+
+
+return(
+
+<main className="pt-20">
+
+
+<section className="
+bg-gabon-yellow
+py-24
+text-center
+">
+
+
+<h1 className="
+text-6xl
+font-title
+font-bold
+">
+
+Cuisine Gabonaise
+
+</h1>
+
+
+<p className="
+mt-5
+text-xl
+">
+
+Les saveurs et plats traditionnels du Gabon
+
+</p>
+
+
+</section>
+
+
+
+<section className="
+max-w-6xl
+mx-auto
+py-16
+px-5
+grid
+md:grid-cols-4
+gap-8
+">
+
+
+{
+
+plats.map(plat=>(
+
+
+<div
+
+key={plat.nom}
+
+className="
+rounded-xl
+overflow-hidden
+shadow-lg
+bg-white
+"
+
+
+>
+
+
+<img
+
+src={plat.image}
+
+className="
+h-56
+w-full
+object-cover
+"
+
+/>
+
+
+<div className="p-5">
+
+
+<h2 className="
+text-2xl
+font-bold
+text-gabon-green
+">
+
+{plat.nom}
+
+</h2>
+
+
+<p className="
+mt-3
+">
+
+{plat.description}
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+))
+
+}
+
+
+</section>
+
+
+</main>
+
+)
+import Tourisme from "../pages/tourisme/Tourisme";
+import Gastronomie from "../pages/gastronomie/Gastronomie";
+}
+<Route 
+path="/tourisme" 
+element={<Tourisme/>}
+/>
+
+
+<Route 
+path="/gastronomie" 
+element={<Gastronomie/>}
+/>["Tourisme","/tourisme"],
+
+["Gastronomie","/gastronomie"],
+  npm install leaflet react-leaflet
+  import "leaflet/dist/leaflet.css";import {useState} from "react";
+
+
+const questions=[
+
+{
+question:"Quelle est la capitale du Gabon ?",
+answers:[
+"Port-Gentil",
+"Libreville",
+"Franceville"
+],
+correct:"Libreville"
+},
+
+
+{
+question:"Le Gabon a obtenu son indépendance en quelle année ?",
+answers:[
+"1960",
+"1975",
+"1985"
+],
+correct:"1960"
+},
+
+
+{
+question:"Combien de provinces possède le Gabon ?",
+answers:[
+"5",
+"9",
+"15"
+],
+correct:"9"
+}
+
+];
+
+
+export default function Quiz(){
+
+
+const [index,setIndex]=useState(0);
+
+const [score,setScore]=useState(0);
+
+const [finished,setFinished]=useState(false);
+
+
+
+function answer(rep:string){
+
+
+if(rep===questions[index].correct){
+
+setScore(score+1);
+
+}
+
+
+if(index+1 < questions.length){
+
+setIndex(index+1);
+
+}
+
+else{
+
+setFinished(true);
+
+}
+
+
+}
+
+
+
+if(finished){
+
+return(
+
+<div className="
+pt-32
+text-center
+">
+
+<h1 className="
+text-5xl
+font-bold
+text-gabon-green
+">
+
+Quiz terminé 🇬🇦
+
+</h1>
+
+
+<p className="
+text-3xl
+mt-8
+">
+
+Score : {score}/{questions.length}
+
+</p>
+
+
+</div>
+
+)
+
+}
+
+
+
+return(
+
+<div className="
+pt-32
+max-w-3xl
+mx-auto
+px-5
+">
+
+
+<h1 className="
+text-5xl
+font-bold
+text-gabon-green
+mb-10
+">
+
+Quiz Gabon
+
+</h1>
+
+
+
+<h2 className="
+text-2xl
+mb-8
+">
+
+{questions[index].question}
+
+</h2>
+
+
+
+<div className="
+grid
+gap-4
+">
+
+
+{
+
+questions[index].answers.map(rep=>(
+
+
+<button
+
+key={rep}
+
+onClick={()=>answer(rep)}
+
+className="
+bg-gabon-green
+text-white
+p-4
+rounded-lg
+hover:scale-105
+transition
+"
+
+>
+
+{rep}
+
+</button>
+
+
+))
+
+
+}
+
+
+</div>
+
+
+</div>
+
+)
+import {
+MapContainer,
+TileLayer,
+Marker,
+Popup
+}
+from "react-leaflet";
+
+
+export default function Carte(){
+
+
+const position:[number,number]=[
+-0.8037,
+11.6094
+];
+
+
+const provinces=[
+
+{
+nom:"Estuaire",
+position:[0.39,9.45]
+},
+
+{
+nom:"Ogooué-Ivindo",
+position:[0.7,12.7]
+},
+
+{
+nom:"Haut-Ogooué",
+position:[-1.5,13.5]
+},
+
+{
+nom:"Ogooué-Maritime",
+position:[-1,8.7]
+}
+
+];
+
+
+
+return(
+
+<div className="
+pt-20
+">
+
+
+<h1 className="
+text-5xl
+text-center
+font-bold
+my-10
+text-gabon-green
+">
+
+Carte interactive du Gabon
+
+</h1>
+
+
+
+<MapContainer
+
+center={position}
+
+zoom={6}
+
+className="
+h-[600px]
+w-full
+"
+
+
+>
+
+
+<TileLayer
+
+url="
+https://tile.openstreetmap.org/{z}/{x}/{y}.png
+"
+
+/>
+
+
+
+{
+
+provinces.map(province=>(
+
+
+<Marker
+
+key={province.nom}
+
+position={
+province.position as [number,number]
+}
+
+>
+
+
+<Popup>
+
+<h2 className="font-bold">
+
+{province.nom}
+
+</h2>
+
+
+<p>
+
+Découvrez cette province du Gabon.
+
+</p>
+
+
+</Popup>
+
+
+</Marker>
+
+
+))
+
+}
+
+
+</MapContainer>
+
+
+</div>
+
+import Quiz from "../pages/quiz/Quiz";
+import Carte from "../pages/carte/Carte";
+)
+
+}<Route 
+path="/quiz" 
+element={<Quiz/>}
+/>
+
+
+<Route 
+path="/carte" 
+element={<Carte/>}
+/>
+}["Quiz","/quiz"],
+
+["Carte","/carte"],
+  src/components/SearchBar.tsximport {useState} from "react";
+
+
+const contenus=[
+
+{
+titre:"Histoire du Gabon",
+lien:"/histoire"
+},
+
+{
+titre:"Culture gabonaise",
+lien:"/culture"
+},
+
+{
+titre:"Ethnies du Gabon",
+lien:"/ethnies"
+},
+
+{
+titre:"Animaux du Gabon",
+lien:"/animaux"
+},
+
+{
+titre:"Tourisme",
+lien:"/tourisme"
+},
+
+{
+titre:"Gastronomie",
+lien:"/gastronomie"
+}
+
+];
+
+
+export default function SearchBar(){
+
+
+const [search,setSearch]=useState("");
+
+const resultats=contenus.filter(item=>
+
+item.titre
+.toLowerCase()
+.includes(search.toLowerCase())
+
+);
+
+
+
+return(
+
+<div className="
+max-w-xl
+mx-auto
+my-10
+">
+
+
+<input
+
+value={search}
+
+onChange={(e)=>setSearch(e.target.value)}
+
+placeholder="Rechercher dans Gabon Découverte..."
+
+className="
+w-full
+border
+p-4
+rounded-full
+shadow
+"
+
+/>
+
+
+
+{
+
+search && (
+
+<div className="
+mt-3
+bg-white
+shadow
+rounded-xl
+">
+
+
+{
+
+resultats.map(item=>(
+
+
+<a
+
+href={item.lien}
+
+key={item.titre}
+
+className="
+block
+p-4
+hover:bg-gray-100
+"
+
+>
+
+{item.titre}
+
+</a>
+
+
+))
+
+}
+
+
+</div>
+
+)
+
+}
+
+
+</div>
+
+)
+src/pages/home/Home.tsx
+  import SearchBar from "../../components/SearchBar";
+}<SearchBar/>
+  <Hero/>
+    src/components/Gallery.tsx
+    const images=[
+
+"https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+
+"https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+
+"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5",
+
+"https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+
+];
+
+
+export default function Gallery(){
+
+
+return(
+
+<section className="
+py-20
+">
+
+
+<h2 className="
+text-4xl
+text-center
+font-bold
+mb-10
+">
+
+Galerie du Gabon 🇬🇦
+
+</h2>
+
+
+<div className="
+grid
+md:grid-cols-4
+gap-5
+px-5
+">
+
+
+{
+
+images.map(img=>(
+
+
+<img
+
+key={img}
+
+src={img}
+
+className="
+h-64
+w-full
+object-cover
+rounded-xl
+hover:scale-105
+transition
+"
+
+/>
+
+
+))
+
+}
+
+
+</div>
+
+
+</section>
+
+)
+
+}src/pages/home/Home.tsx
+    import Gallery from "../../components/Gallery";
+    <Gallery/>
+      src/components/Footer.tsx
+      export default function Footer(){
+
+
+return(
+
+<footer className="
+bg-gabon-dark
+text-white
+py-10
+text-center
+">
+
+
+<h2 className="
+text-3xl
+font-bold
+">
+
+🇬🇦 Gabon Découverte
+
+</h2>
+
+
+<p className="
+mt-4
+">
+
+Explorez l'histoire, la culture et les merveilles du Gabon.
+
+</p>
+
+
+
+<p className="
+mt-8
+text-sm
+">
+
+© 2026 Gabon Découverte de ENGOUANG FORTUNE- Tous droits réservés
+
+</p>
+
+
+</footer>
+
+)
+import Footer from "./components/Footer";
+}return(
+
+<BrowserRouter>
+
+<Navbar/>
+
+<Router/>
+
+<Footer/>
+
+</BrowserRouter>
+
+)src/index.css
+  .dark{
+
+background:#111;
+color:white;
+
+}<meta name="author" content="Gabon Découverte">
+
+<meta name="theme-color" content="#009E49">
+
+<meta property="og:title"
+content="Gabon Découverte 🇬🇦">
+
+<meta property="og:description"
+content="Découvrez le Gabon : histoire, culture, nature et tourisme.">npm run build
+  public/
+ └── logo.svg
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+<circle cx="100" cy="100" r="95" fill="#009E49"/>
+
+<circle cx="100" cy="100" r="70" fill="#FCD116"/>
+
+<text 
+x="100"
+y="120"
+font-size="70"
+text-anchor="middle"
+fill="#063B1C">
+GA
+</text>
+
+  </svg>src/components/Navbar.tsx
+  🇬🇦 Gabon Découverte
+  <div className="flex items-center gap-3">
+
+<img
+src="/logo.svg"
+className="w-10 h-10"
+/>
+
+
+<span className="
+text-2xl
+font-bold
+text-gabon-green
+font-title
+">
+
+Gabon Découverte
+
+</span>
+
+
+  </div>index.html
+  <link 
+rel="icon"
+type="image/svg+xml"
+href="/logo.svg"
+/>npm install framer-motion
+  src/components/AnimatedSection.tsx
+  import {motion} from "framer-motion";
+
+
+export default function AnimatedSection(
+{children}:{
+children:React.ReactNode
+}){
+
+
+return(
+
+<motion.div
+
+initial={{
+opacity:0,
+y:40
+}}
+
+whileInView={{
+opacity:1,
+y:0
+}}
+
+viewport={{
+once:true
+}}
+
+transition={{
+duration:0.8
+}}
+
+>
+
+{children}
+
+</motion.div>
+
+)
+
+}import AnimatedSection from "../../../components/AnimatedSection";
+  <AnimatedSection>
+
+<div className="card">
+
+...
+
+</div>
+
+  </AnimatedSection>npm install react-leaflet leaflet
+  src/data/provinces.tsexport const provinces=[
+
+{
+nom:"Estuaire",
+ville:"Libreville",
+description:"Capitale du Gabon",
+position:[0.39,9.45]
+},
+
+
+{
+nom:"Ogooué-Ivindo",
+ville:"Makokou",
+description:"Forêts et biodiversité",
+position:[0.7,12.7]
+},
+
+
+{
+nom:"Haut-Ogooué",
+ville:"Franceville",
+description:"Région historique",
+position:[-1.5,13.5]
+},
+
+
+{
+nom:"Ogooué-Maritime",
+ville:"Port-Gentil",
+description:"Zone côtière",
+position:[-1,8.7]
+}
+src/components/BackToTop.tsx
+  import {useEffect,useState} from "react";
+
+
+export default function BackToTop(){
+
+
+const [visible,setVisible]=useState(false);
+
+
+useEffect(()=>{
+
+
+window.addEventListener(
+"scroll",
+()=>{
+
+setVisible(
+window.scrollY>400
+)
+
+}
+
+);
+
+
+},[]);
+
+
+
+if(!visible)
+return null;
+
+
+
+return(
+
+<button
+
+onClick={()=>window.scrollTo({
+top:0,
+behavior:"smooth"
+})}
+
+className="
+fixed
+bottom-5
+right-5
+bg-gabon-green
+text-white
+w-12
+h-12
+rounded-full
+shadow-xl
+"
+
+>
+
+↑
+
+</button>
+
+)
+
+}
+];import BackToTop from "./components/BackToTop";
+  <BrowserRouter>
+
+<Navbar/>
+
+<Router/>
+
+<Footer/>
+
+<BackToTop/>
+
+</BrowserRouter>src/pages/NotFound.tsx
+  import {Link} from "react-router-dom";
+
+
+export default function NotFound(){
+
+
+return(
+
+<div className="
+pt-40
+text-center
+">
+
+
+<h1 className="
+text-8xl
+font-bold
+text-gabon-green
+">
+
+404
+
+</h1>
+
+
+<h2 className="
+text-3xl
+mt-5
+">
+
+Page introuvable
+
+</h2>
+
+
+
+<Link
+
+to="/"
+
+className="
+inline-block
+mt-8
+bg-gabon-green
+text-white
+px-8
+py-3
+rounded-full
+"
+
+>
+
+Retour accueil
+
+</Link>
+
+
+</div>
+
+)
+<img src="image">
+  <img
+
+src="image"
+
+loading="lazy"
+
+alt="Découverte du Gabon"
+
+/>
+}<meta name="author" content="Gabon Découverte">
+
+<meta name="keywords" content="
+Gabon,
+tourisme Gabon,
+culture gabonaise,
+faune Gabon,
+forêt équatoriale,
+Libreville
+">
+
+<meta name="robots" content="index,follow">
