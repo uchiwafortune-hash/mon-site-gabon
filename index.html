@@ -1104,3 +1104,174 @@ alert("Épisode suivant");
 }
 
 </script>
+<section class="anime-player">
+
+<h2>🎬 Lecteur Anime</h2>
+
+<div class="player-container">
+
+<video
+id="animePlayer"
+controls
+controlsList="nodownload"
+preload="metadata"
+poster="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1280"
+width="100%">
+
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+Votre navigateur ne supporte pas la lecture vidéo.
+
+</video>
+
+<div class="player-controls">
+
+<button onclick="episodePrecedent()">
+⏮ Précédent
+</button>
+
+<button onclick="lecturePause()">
+▶ Lecture / Pause
+</button>
+
+<button onclick="pleinEcran()">
+⛶ Plein écran
+</button>
+
+<button onclick="episodeSuivant()">
+⏭ Suivant
+</button>
+
+</div>
+
+<div class="episode-list">
+
+<h3>Épisodes</h3>
+
+<button onclick="chargerVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+Épisode 1
+</button>
+
+<button onclick="chargerVideo('https://www.w3schools.com/html/movie.mp4')">
+Épisode 2
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+body{
+background:#0f1117;
+color:white;
+font-family:Arial,sans-serif;
+}
+
+.anime-player{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.player-container{
+background:#1b1d27;
+padding:20px;
+border-radius:15px;
+}
+
+video{
+border-radius:12px;
+background:black;
+}
+
+.player-controls{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.player-controls button,
+.episode-list button{
+
+background:#ff4757;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.player-controls button:hover,
+.episode-list button:hover{
+
+background:#ff6b81;
+
+}
+
+.episode-list{
+
+margin-top:30px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+
+}
+
+</style>
+
+<script>
+
+const player=document.getElementById("animePlayer");
+
+function lecturePause(){
+
+if(player.paused){
+
+player.play();
+
+}else{
+
+player.pause();
+
+}
+
+}
+
+function pleinEcran(){
+
+if(player.requestFullscreen){
+
+player.requestFullscreen();
+
+}
+
+}
+
+function chargerVideo(url){
+
+player.src=url;
+
+player.play();
+
+}
+
+function episodePrecedent(){
+
+alert("À relier à ta liste d'épisodes.");
+
+}
+
+function episodeSuivant(){
+
+alert("À relier à ta liste d'épisodes.");
+
+}
+
+</script>
