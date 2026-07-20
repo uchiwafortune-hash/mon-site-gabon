@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabon Découverte - ENGOUANG FORTUNE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRE DE NAVIGATION SIMPLE -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-area">
+        <div class="animated-logo">🇬🇦</div>
+        <div class="brand-text">
+          <h1>GABON DÉCOUVERTE</h1>
+          <p>Conçu par <span>ENGOUANG FORTUNE</span></p>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#accueil" class="active">Accueil</a>
+        <a href="#histoire">Histoire</a>
+        <a href="#animaux">Faune</a>
+        <a href="#politique">Politique</a>
+        <a href="#ethnies">Ethnies</a>
+        <a href="#cuisine">Cuisine</a>
+        <a href="#provinces">Provinces</a>
+        <a href="#tourisme">Tourisme</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNIÈRE D'ACCUEIL -->
+  <section id="accueil" class="hero">
+    <div class="hero-text">
+      <h2>Découvrez la Richesse et la Beauté du Gabon</h2>
+      <p>Un voyage complet au cœur de l'Afrique Centrale : histoire, culture, biodiversité, villes et gastronomie.</p>
+      
+      <!-- BARRE DE RECHERCHE INTELLIGENTE -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Rechercher une province, une ville, un plat, un animal..." onkeyup="rechercher()">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENU PRINCIPAL BIEN DÉTAILLÉ -->
+  <main class="main-content">
+    <h2 class="section-title">Découverte Générale du Gabon</h2>
+
+    <div class="grid-categories" id="gridCategories">
+
+      <!-- 1. HISTOIRE -->
+      <article class="card" id="histoire" data-keywords="histoire passe independance pygmees bantous leon mba bongo 1960">
+        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80" alt="Histoire du Gabon">
+        <div class="card-content">
+          <h3>Histoire & Origines du Gabon</h3>
+          
+          <p>L'histoire du Gabon commence il y a plusieurs millénaires avec les peuples autochtones, principalement les Pygmées, considérés comme les plus anciens habitants de la forêt équatoriale gabonaise. Maîtres de la nature et de la médecine traditionnelle, ils ont vécu en symbiose avec l'écosystème marin et forestier pendant des siècles.</p>
+          
+          <p>À partir du XIVe siècle, de grandes vagues de migrations bantoues s'installent progressivement sur le territoire. C'est à la fin du XVe siècle que les marins portugais abordent l'estuaire du fleuve Ogooué. Découvrant un relief ressemblant à un manteau à capuchon (appelé <em>"gabão"</em> en portugais), ils donnèrent au pays le nom de Gabon.</p>
+
+          <p>Après la colonisation française au XIXe siècle et l'établissement du comptoir de Libreville, le Gabon accède à son indépendance le 17 août 1960. Le premier président, Léon Mba, suivi de figures politiques majeures, a marqué la construction de la nation gabonaise moderne.</p>
+        </div>
+      </article>
+
+      <!-- 2. ANIMAUX ET FAUNE -->
+      <article class="card" id="animaux" data-keywords="animaux faune flore elephant gorille mandrill biodiversite loango ivindo">
+        <img src="https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&w=800&q=80" alt="Faune sauvage du Gabon">
+        <div class="card-content">
+          <h3>Faune, Flora & Biodiversité</h3>
+          
+          <p>Le Gabon est souvent qualifié de « Dernier Éden de l'Afrique » ou de « Poumon Vert ». Plus de 80 % de sa superficie est recouverte d'une forêt équatoriale dense, offrant un refuge naturel préservé pour des milliers d'espèces d'animaux et de plantes uniques au monde.</p>
+          
+          <p>Le pays abrite la plus grande population d'éléphants de forêt d'Afrique, ainsi qu'une impressionnante communauté de grands singes, dont des gorilles des plaines de l'Ouest et des chimpanzés. Les forêts abritent également les imposants mandrills, reconnaissables à leurs couleurs vives sur le visage.</p>
+
+          <p>Le littoral et les rivières abritent des baleines à bosse, des dauphins et des hippopotames surfeurs, observables le long des plages du parc national de Loango. La préservation de cet écosystème repose sur un réseau exceptionnel de 13 parcs nationaux créés pour protéger ce patrimoine mondial.</p>
+        </div>
+      </article>
+
+      <!-- 3. POLITIQUE ET INSTITUTIONS -->
+      <article class="card" id="politique" data-keywords="politique president ministre gouverneur gouvernement etat libreville assemblee">
+        <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80" alt="Institutions du Gabon">
+        <div class="card-content">
+          <h3>Politique & Gouvernance</h3>
+          
+          <p>La République Gabonaise est un État souverain d'Afrique Centrale organisé selon un régime républicain. La capitale politique et administrative du pays est Libreville, où siègent les principales institutions républicaines.</p>
+          
+          <p>L'organisation politique repose sur la séparation des pouvoirs : le pouvoir exécutif, dirigé par le Président de la République et son Gouvernement mené par le Premier Ministre ; le pouvoir législatif, composé de l'Assemblée Nationale et du Sénat ; et le pouvoir judiciaire.</p>
+
+          <p>À l'échelle locale et régionale, le Gabon est administré à travers ses 9 provinces. Chaque province est placée sous l'autorité d'un Gouverneur de Province représentant l'État, garant du respect des lois et du développement économique et social des départements locaux.</p>
+        </div>
+      </article>
+
+      <!-- 4. ETHNIES ET CULTURE -->
+      <article class="card" id="ethnies" data-keywords="ethnies culture fang punu myene kota nzebi bwiti masque tradition">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80" alt="Culture et masques gabonais">
+        <div class="card-content">
+          <h3>Ethnies, Traditions & Patrimoine Culturel</h3>
+          
+          <p>La population gabonaise est caractérisée par une formidable diversité ethnique et linguistique. On recense plus de 50 groupes ethniques qui coexistent dans la paix et la solidarité, formant un tissu culturel particulièrement riche et dynamique.</p>
+          
+          <p>Parmi les groupes ethniques majeurs figurent les Fangs (principalement au nord et au centre), les Punu et Nzebi (dans le sud), les Myènè (sur le littoral et dans l'Ogooué-Maritime), les Kota, les Teke, ainsi que les peuples Pygmées. Chaque groupe conserve ses dialectes, ses contes traditionnels et ses danses rythmiques.</p>
+
+          <p>L'art gabonais est réputé mondialement pour ses masques rituels (comme le masque blanc Mukudji des Punu ou les figures funéraires Kota). La spiritualité s'exprime également à travers le rite sacré du Bwiti, une tradition ancestrale d'initiation et de sagesse reconnue comme patrimoine culturel national.</p>
+        </div>
+      </article>
+
+      <!-- 5. CUISINE ET PLATS -->
+      <article class="card" id="cuisine" data-keywords="cuisine plats ingredients nyembwe odika manioc poisson banane feugile">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Gastronomie du Gabon">
+        <div class="card-content">
+          <h3>Plats Traditionnels & Ingrédients</h3>
+          
+          <p>La gastronomie gabonaise offre une palette de saveurs généreuses nées de la réunion des produits de la forêt tropicale et des trésors de l'océan Atlantique. Elle privilégie les ingrédients frais, le poisson fumé, les viandes et les sauces riches en graines locales.</p>
+          
+          <p>Le plat national emblématique est le <strong>Poulet Nyembwe</strong> (ou poisson Nyembwe), prépare avec une sauce onctueuse extraite de la noix de palme râpée. Un autre grand classique est le <strong>Sauce Odika</strong>, une sauce brune parfumée élaborée à partir du chocolat indigène (noyaux de mangue sauvage râpés).</p>
+
+          <p>Ces mets sont généralement accompagnés de bâtons de manioc (bobolo ou kwanga), de banane plantain bouillie ou pilée, de feuilles de manioc pilées (saka-saka) et de piment frais du village.</p>
+        </div>
+      </article>
+
+      <!-- 6. PROVINCES ET VILLES -->
+      <article class="card" id="provinces" data-keywords="provinces villes estuaire libreville oyem franceville port gentil lambarene mouila tchibanga makokou koulamoutou">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Villes et Provinces du Gabon">
+        <div class="card-content">
+          <h3>Les 9 Provinces & Villes Principales</h3>
+          
+          <p>Le Gabon est découpé en 9 provinces majeures, chacune possédant son chef-lieu administratif et ses spécificités économiques et géographiques :</p>
+          
+          <p><strong>1. Estuaire</strong> (Chef-lieu : Libreville, la capitale nationale).<br>
+          <strong>2. Haut-Ogooué</strong> (Chef-lieu : Franceville, centre minier et agricole).<br>
+          <strong>3. Moyen-Ogooué</strong> (Chef-lieu : Lambaréné, célèbre pour ses lacs et l'hôpital du Dr Schweitzer).<br>
+          <strong>4. Ngounié</strong> (Chef-lieu : Mouila).<br>
+          <strong>5. Nyanga</strong> (Chef-lieu : Tchibanga).</p>
+
+          <p><strong>6. Ogooué-Ivindo</strong> (Chef-lieu : Makokou, cœur du parc d'Ivindo).<br>
+          <strong>7. Ogooué-Lolo</strong> (Chef-lieu : Koulamoutou).<br>
+          <strong>8. Ogooué-Maritime</strong> (Chef-lieu : Port-Gentil, capitale économique et pétrolière).<br>
+          <strong>9. Woleu-Ntem</strong> (Chef-lieu : Oyem, grande région agricole au nord).</p>
+        </div>
+      </article>
+
+      <!-- 7. TOURISME -->
+      <article class="card" id="tourisme" data-keywords="tourisme lieux visite loango ivindo lambarene plages mayumba lope safari">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Tourisme au Gabon">
+        <div class="card-content">
+          <h3>Lieux Touristiques Incontournables</h3>
+          
+          <p>Le Gabon représente une destination privilégiée pour les amoureux d'écotourisme et de grand air. Ses paysages sauvages varient entre plages vierges, lagunes, savanes et montagnes forestières.</p>
+          
+          <p>Le <strong>Parc National de Loango</strong> est mondialement célèbre pour ses paysages où les animaux sauvages (éléphants, buffles, hippopotames) se promènent directement sur les plages. Au centre du pays, le <strong>Parc National de la Lopé</strong> est classé au patrimoine mondial de l'UNESCO pour ses vestiges archéologiques et ses savanes ancestrales.</p>
+
+          <p>À ne pas manquer également : les spectaculaires <strong>Chutes de Kongou</strong> dans le parc d'Ivindo, la ville historique de <strong>Lambaréné</strong> sur le fleuve Ogooué, et les magnifiques plages de Pointe-Denis situées en face de Libreville.</p>
+        </div>
+      </article>
+
+      <!-- 8. QUIZ SUR L'HISTOIRE ET LE PAYS -->
+      <article class="card" id="quiz" data-keywords="quiz jeu test questions histoire gabon apprendre">
+        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=800&q=80" alt="Quiz interactif Gabon">
+        <div class="card-content">
+          <h3>Quiz : Testez vos connaissances</h3>
+          
+          <p>Mettez à l'épreuve vos connaissances sur le Gabon à travers ce petit test interactif rapide !</p>
+          
+          <div class="quiz-box">
+            <p><strong>Question :</strong> Quelle est la capitale économique du Gabon ?</p>
+            <button class="quiz-btn" onclick="verifierReponse(this, false)">A) Libreville</button>
+            <button class="quiz-btn" onclick="verifierReponse(this, true)">B) Port-Gentil</button>
+            <button class="quiz-btn" onclick="verifierReponse(this, false)">C) Franceville</button>
+            <p class="quiz-result"></p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="footer">
+    <p>&copy; 2026 Gabon Découverte - Site développé par <strong>ENGOUANG FORTUNE</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+/* STYLES GÉNÉRAUX SIMPLE ET ÉPURÉS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #2c3e50;
+  line-height: 1.7;
+}
+
+/* EN-TÊTE FIXE AVEC BANDE EN TRIANGLE NATIONALE */
+.header {
+  background-color: #ffffff;
+  border-bottom: 4px solid #009e49;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ANIMATION DU LOGO */
+.animated-logo {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 0 0 3px #009e49, 0 0 0 6px #fcd116, 0 0 0 9px #3a75c4;
+  animation: tournerLogo 8s linear infinite;
+}
+
+@keyframes tournerLogo {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.brand-text h1 {
+  font-size: 1.2rem;
+  color: #1a252f;
+  letter-spacing: 1px;
+}
+
+.brand-text p {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.brand-text span {
+  color: #3a75c4;
+  font-weight: bold;
+}
+
+/* MENU DE NAVIGATION */
+.nav-menu {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #34495e;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+  background-color: #009e49;
+  color: #ffffff;
+}
+
+/* SECTION D'ACCUEIL (HERO) */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+/* BARRE DE RECHERCHE INTELLIGENTE */
+.search-box input {
+  width: 100%;
+  max-width: 600px;
+  padding: 14px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* SECTION PRINCIPALE */
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1a252f;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #fcd116;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.grid-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+/* CARTES D'INFORMATION DÉTAILLÉES */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  color: #009e49;
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #f4f7f6;
+  padding-bottom: 8px;
+}
+
+/* PARAGRAPHES ESPACÉS COMME DEMANDÉ */
+.card-content p {
+  color: #555555;
+  font-size: 0.98rem;
+  margin-bottom: 16px; /* Espacement net et clair */
+  text-align: justify;
+}
+
+/* QUIZ STYLES */
+.quiz-box {
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #3a75c4;
+}
+
+.quiz-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #cbd5e1;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+}
+
+.quiz-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.quiz-result {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* PIED DE PAGE */
+.footer {
+  text-align: center;
+  background-color: #1a252f;
+  color: #ffffff;
+  padding: 25px;
+  margin-top: 60px;
+}
+
+.footer strong {
+  color: #fcd116;
+}
+// RECHERCHE INTELLIGENTE EN TEMPS RÉEL
+function rechercher() {
+  let input = document.getElementById('searchInput');
+  let filtre = input.value.toLowerCase().trim();
+  let cartes = document.querySelectorAll('.card');
+
+  cartes.forEach(function(carte) {
+    let titre = carte.querySelector('h3').textContent.toLowerCase();
+    let motsCles = carte.getAttribute('data-keywords') ? carte.getAttribute('data-keywords').toLowerCase() : '';
+    let texte = carte.textContent.toLowerCase();
+
+    // Vérifie si la recherche correspond au titre, aux mots-clés ou au texte
+    if (titre.includes(filtre) || motsCles.includes(filtre) || texte.includes(filtre)) {
+      carte.style.display = "flex";
+    } else {
+      carte.style.display = "none";
+    }
+  });
+}
+
+// LOGIQUE POUR LE QUIZ
+function verifierReponse(bouton, estCorrecte) {
+  let resultatText = bouton.parentElement.querySelector('.quiz-result');
+  
+  if (estCorrecte) {
+    resultatText.style.color = "#009e49";
+    resultatText.textContent = "Bravo ! Bonne réponse. Port-Gentil est bien la capitale économique du Gabon.";
+  } else {
+    resultatText.style.color = "#e74c3c";
+    resultatText.textContent = "Mauvaise réponse. Essayez encore !";
+  }
+}
