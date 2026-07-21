@@ -1,1 +1,606 @@
 
+/* =========================
+   STYLE GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    background:#050816;
+
+    color:white;
+
+    line-height:1.6;
+
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(5,8,22,0.85);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+}
+
+
+
+.logo{
+
+    font-size:25px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:25px;
+
+}
+
+
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+
+
+nav ul li a:hover{
+
+    color:#00d9ff;
+
+}
+
+
+/* =========================
+   ACCUEIL
+========================= */
+
+
+.hero{
+
+    height:100vh;
+
+    background-image:
+
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.7)
+    ),
+
+    url("https://images-assets.nasa.gov/image/PIA12235/PIA12235~large.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+
+.hero-content{
+
+    max-width:900px;
+
+    padding:20px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:30px;
+
+    color:#00d9ff;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+
+/* =========================
+   BOUTONS
+========================= */
+
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#00d9ff;
+
+    color:#001018;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}/* =========================
+   SECTIONS
+========================= */
+
+
+section{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+}
+
+
+
+section h2{
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+    color:#00d9ff;
+
+}
+
+
+
+section p{
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    font-size:17px;
+
+}
+
+
+/* =========================
+   PROPRIETAIRE
+========================= */
+
+
+.proprietaire{
+
+    background:#081126;
+
+}
+
+
+
+.proprietaire h1{
+
+    font-size:45px;
+
+    margin:20px;
+
+}
+
+
+
+/* =========================
+   IMAGES
+========================= */
+
+
+section img{
+
+    width:80%;
+
+    max-width:800px;
+
+    border-radius:20px;
+
+    margin:30px auto;
+
+    display:block;
+
+    box-shadow:0 0 30px rgba(0,217,255,0.3);
+
+}
+
+
+/* =========================
+   CARTES
+========================= */
+
+
+.cartes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+
+
+.carte{
+
+    background:#101a35;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    transition:0.4s;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+}
+
+
+
+.carte:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 30px rgba(0,217,255,0.25);
+
+}
+
+
+
+.carte h3{
+
+    color:#00d9ff;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.carte img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+/* =========================
+   BOUTONS SECTIONS
+========================= */
+
+
+button{
+
+    background:#00d9ff;
+
+    color:#001018;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    margin:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+  }/* =========================
+   GALERIE
+========================= */
+
+
+.galerie{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.galerie img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:0.4s;
+
+}
+
+
+
+.galerie img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* =========================
+   QUIZ
+========================= */
+
+
+#quiz{
+
+    background:#081126;
+
+    border-radius:30px;
+
+    margin:50px 8%;
+
+}
+
+
+
+#question{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+
+#resultat{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    color:#00ff99;
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer{
+
+    background:#02040d;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+
+footer h3{
+
+    color:#00d9ff;
+
+    font-size:30px;
+
+}
+
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+
+section{
+
+    animation:apparition 1s ease;
+
+}
+
+
+
+@keyframes apparition{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================
+   TELEPHONE
+========================= */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+    flex-direction:column;
+
+}
+
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin-top:15px;
+
+}
+
+
+.hero h1{
+
+    font-size:35px;
+
+}
+
+
+.hero h2{
+
+    font-size:22px;
+
+}
+
+
+section{
+
+    padding:70px 5%;
+
+}
+
+
+section h2{
+
+    font-size:30px;
+
+}
+
+
+.proprietaire h1{
+
+    font-size:32px;
+
+}
+
+
+}
